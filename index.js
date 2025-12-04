@@ -177,6 +177,41 @@ app.get("/:app/api/view/:id", (req, res) => {
   }
 });
 
+function randomCaseResponse() {
+  return {
+    caseId: "C-" + Math.floor(100 + Math.random() * 900), // C-123
+    caseType: {name: "example-case-type"},
+    createdAt: new Date().toISOString(),
+    updatedAt: new Date().toISOString(),
+    updatedBy: "system-user",
+  };
+}
+
+// GET - Task assigned to user by ID
+app.get("/:app/api/task/user/:id", (req, res) => {
+  const appName = req.params.app;
+  const taskId = req.params.id;
+
+  // we ignore id for now and send random mock
+  const response = randomCaseResponse();
+  response.caseType.name = `${appName}-task-user`; // helpful for testing
+  console.log("Task for user:", taskId, "in app:", appName);
+
+  res.json(response);
+});
+
+// GET - Task in queue by ID
+app.get("/:app/api/task/queue/:id", (req, res) => {
+  const appName = req.params.app;
+  const queueTaskId = req.params.id;
+
+  const response = randomCaseResponse();
+  response.caseType.name = `${appName}-task-queue`; // helpful for testing
+  console.log("Task in queue:", queueTaskId, "in app:", appName);
+
+  res.json(response);
+});
+
 app.listen(PORT, () => {
   console.log("Stubbed API running on port", PORT);
 });
