@@ -177,38 +177,41 @@ app.get("/:app/api/view/:id", (req, res) => {
   }
 });
 
-function randomCaseResponse() {
-  return {
-    caseId: "C-" + Math.floor(100 + Math.random() * 900), // C-123
-    caseType: {name: "example-case-type"},
+function generateRandomTasks(count, name) {
+  return Array.from({length: count}).map(() => ({
+    caseId: "C-" + Math.floor(100 + Math.random() * 900),
+    caseType: {name},
     createdAt: new Date().toISOString(),
     updatedAt: new Date().toISOString(),
     updatedBy: "system-user",
-  };
+  }));
 }
 
-// GET - Task assigned to user by ID
+// GET - Task assigned to user by ID (returns array)
 app.get("/:app/api/task/user/:id", (req, res) => {
   const appName = req.params.app;
   const taskId = req.params.id;
 
-  // we ignore id for now and send random mock
-  const response = randomCaseResponse();
-  response.caseType.name = `${appName}-task-user`; // helpful for testing
-  console.log("Task for user:", taskId, "in app:", appName);
+  const response = generateRandomTasks(
+    Math.floor(3 + Math.random() * 5), // random 3-7 tasks
+    `${appName}-task-user`
+  );
 
+  console.log("User tasks for:", taskId, "->", response.length, "items");
   res.json(response);
 });
 
-// GET - Task in queue by ID
+// GET - Task in queue by ID (returns array)
 app.get("/:app/api/task/queue/:id", (req, res) => {
   const appName = req.params.app;
   const queueTaskId = req.params.id;
 
-  const response = randomCaseResponse();
-  response.caseType.name = `${appName}-task-queue`; // helpful for testing
-  console.log("Task in queue:", queueTaskId, "in app:", appName);
+  const response = generateRandomTasks(
+    Math.floor(5 + Math.random() * 5), // random 5-10 tasks
+    `${appName}-task-queue`
+  );
 
+  console.log("Queue tasks for:", queueTaskId, "->", response.length, "items");
   res.json(response);
 });
 
