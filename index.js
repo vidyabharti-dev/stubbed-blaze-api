@@ -3,7 +3,25 @@ const cors = require("cors");
 const path = require("path");
 
 const app = express();
-app.use(cors());
+
+const allowedOrigins = [
+  "https://id-preview--5668ff49-221b-4c38-9ae4-1d64dd3d1536.lovable.app",
+  "https://lovable.dev",
+  // you can add other allowed origins here if needed
+];
+
+app.use(cors({
+  origin: function(origin, callback){
+    // allow requests with no origin like mobile apps or curl requests
+    if(!origin) return callback(null, true);
+    if(allowedOrigins.indexOf(origin) === -1){
+      const msg = "The CORS policy for this site does not allow access from the specified Origin.";
+      return callback(new Error(msg), false);
+    }
+    return callback(null, true);
+  },
+  credentials: true
+}));
 
 const PORT = process.env.PORT || 3000;
 
