@@ -14,6 +14,12 @@ const validApps = [
   "customer-service",
 ];
 
+// GET all applications
+app.get("/api/application", (req, res) => {
+  const apps = require("./database/applications.js");
+  res.json(apps);
+});
+
 // Middleware: validate app name
 app.use("/:app/*rest", (req, res, next) => {
   const appName = req.params.app;
@@ -34,7 +40,7 @@ app.get("/:app/api/case-type", (req, res) => {
 });
 
 // 🔥 GET details of a case type
-app.get("/:app/api/case-type/:id", (req, res) => {
+app.get("/:app/api/case/:id", (req, res) => {
   const appName = req.params.app;
   const id = req.params.id;
 
