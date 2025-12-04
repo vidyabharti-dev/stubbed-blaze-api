@@ -1,5 +1,5 @@
 module.exports = [
-  {id: "bookticket", label: "bookticket"},
-  {id: "chkticket", label: "chkticket"},
-  {id: "support_tickets", label: "Support Tickets"},
+  {id: "bookticket", name: "bookticket"},
+  {id: "chkticket", name: "chkticket"},
+  {id: "support_tickets", name: "Support Tickets"},
 ];
