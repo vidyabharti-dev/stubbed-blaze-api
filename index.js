@@ -150,6 +150,33 @@ app.put("/:app/api/case", (req, res) => {
   res.json({status: "success"});
 });
 
+// 🔥 GET Task Queue
+app.get("/:app/api/task-queue", (req, res) => {
+  const appName = req.params.app;
+
+  try {
+    const taskQueues = require(`./database/${appName}/task-queues.js`);
+    res.json(taskQueues);
+  } catch (err) {
+    return res
+      .status(404)
+      .json({error: "Task queue data not found for this app"});
+  }
+});
+
+// GET View Definition by file id
+app.get("/:app/api/view/:id", (req, res) => {
+  const appName = req.params.app;
+  const fileId = req.params.id; // includes .json extension
+
+  try {
+    const viewData = require(`./database/${appName}/views/${fileId}`);
+    res.json(viewData);
+  } catch (err) {
+    return res.status(404).json({error: "View file not found"});
+  }
+});
+
 app.listen(PORT, () => {
   console.log("Stubbed API running on port", PORT);
 });

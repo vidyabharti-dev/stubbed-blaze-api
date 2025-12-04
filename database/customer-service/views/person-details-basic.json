@@ -1,0 +1,12 @@
+{
+  "id": "personal-details-basic",
+  "context": {
+    "type": "data",
+    "entity": "person"
+  },
+  "fields": [
+    {"attribute": "firstName"},
+    {"attribute": "lastName"},
+    {"attribute": "dateOfBirth"}
+  ]
+}

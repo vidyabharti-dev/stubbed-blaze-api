@@ -1,0 +1,22 @@
+{
+  "id": "applicant-info",
+  "context": {
+    "type": "case",
+    "entity": "intake"
+  },
+  "fields": [
+    {"attribute": "dateOfRequest"},
+    {
+      "view": {
+        "id": "person-details-basic",
+        "context": ""
+      }
+    },
+    {
+      "view": {
+        "id": "person-details-basic",
+        "context": "partner"
+      }
+    }
+  ]
+}
