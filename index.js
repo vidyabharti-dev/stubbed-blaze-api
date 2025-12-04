@@ -78,70 +78,76 @@ app.get("/:app/api/case-type/:id", (req, res) => {
 });
 
 // 🔥 Create a new Case
+
+// POST - Create a new case
 app.post("/:app/api/case", (req, res) => {
   const appName = req.params.app;
-  const caseTypeData = req.body["case-type"];
+  const caseTypeData = req.body.caseType;
 
   if (!caseTypeData || !caseTypeData.id) {
-    return res.status(400).json({error: "case-type.id is required"});
+    return res.status(400).json({error: "caseType.id is required"});
   }
 
   const newId = `${appName}-${Date.now()}`;
   const randomNum = Math.floor(100 + Math.random() * 900);
   const newCase = {
-    "case-id": `C-${randomNum}`,
-    "case-type": caseTypeData,
-    id: newId,
+    caseId: `C-${randomNum}`,
+    caseType: caseTypeData,
+    key: newId, // unique internal key
   };
 
   // Save to in-memory store
   casesStore[newId] = newCase;
-  console.log("Created new case:", newCase["case-id"]);
+  console.log("Created new case:", newCase.caseId);
   res.status(201).json(newCase);
 });
 
+// GET - Get a case by caseId
 app.get("/:app/api/case/:caseId", (req, res) => {
   const appName = req.params.app;
   const caseIdParam = req.params.caseId;
 
+  // Find case by caseId and app prefix
   const foundCase = Object.values(casesStore).find(
-    (c) => c["case-id"] === caseIdParam && c.id && c.id.startsWith(appName)
+    (c) => c.caseId === caseIdParam && c.key && c.key.startsWith(appName)
   );
 
   if (!foundCase) {
     return res.status(404).json({error: "Case not found"});
   }
 
-  // Clone object to avoid mutating in-memory store
-  const {id, ...caseWithoutId} = foundCase;
-
-  res.json(caseWithoutId);
+  // Exclude internal key from response
+  const {key, ...caseWithoutKey} = foundCase;
+  res.json(caseWithoutKey);
 });
 
+// PUT - Update a case by caseId
 app.put("/:app/api/case", (req, res) => {
   const appName = req.params.app;
-  const {"case-id": caseId, ...updateData} = req.body;
+  const {caseId, ...updateData} = req.body;
 
   if (!caseId) {
-    return res.status(400).json({error: '"case-id" is required in the body'});
+    return res.status(400).json({error: '"caseId" is required in the body'});
   }
 
-  // Find case in the store by "case-id" and app prefix
+  // Find the internal key for the case by caseId and app prefix
   const foundCaseKey = Object.keys(casesStore).find(
-    (key) => casesStore[key]["case-id"] === caseId && key.startsWith(appName)
+    (key) => casesStore[key].caseId === caseId && key.startsWith(appName)
   );
 
   if (!foundCaseKey) {
     return res.status(404).json({error: "Case not found"});
   }
 
-  // Update case with new data, but keep "id" and "case-id"
+  // Update case with new data but keep existing caseId and key
   casesStore[foundCaseKey] = {
     ...casesStore[foundCaseKey],
     ...updateData,
+    caseId, // ensure caseId stays the same
+    key: foundCaseKey, // ensure key stays the same
   };
 
-  return res.json({status: "success"});
+  res.json({status: "success"});
 });
 
 app.listen(PORT, () => {
