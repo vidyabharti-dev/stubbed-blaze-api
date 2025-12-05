@@ -6,7 +6,7 @@ const app = express();
 
 const allowedOrigins = [
   "https://id-preview--5668ff49-221b-4c38-9ae4-1d64dd3d1536.lovable.app",
-  "https://lovable.dev",
+  "https://lovable.dev","https://id-preview--3c52ef72-55a2-4d1b-97a9-e192c21b3cdc.lovable.app"
   // you can add other allowed origins here if needed
 ];
 
