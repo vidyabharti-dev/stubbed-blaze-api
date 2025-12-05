@@ -437,6 +437,129 @@ app.get("/:app/api/locale/:lang", (req, res) => {
   }
 });
 
+app.get(
+  "/:app/api/function/calculation/averageResolutionTimeReport/execute",
+  (req, res) => {
+    const executedAt = new Date().toISOString();
+
+    return res.json({
+      success: true,
+      functionType: "data",
+      executedAt,
+      result: {
+        data: [
+          {
+            caseType: "Intake",
+            componentType: "stage",
+            componentName: "Completion",
+            avgMs: 3550,
+          },
+          {
+            caseType: "Intake",
+            componentType: "stage",
+            componentName: "Registration",
+            avgMs: 42637.666666666664,
+          },
+          {
+            caseType: "Intake",
+            componentType: "stage",
+            componentName: "Review",
+            avgMs: 12122,
+          },
+          {
+            caseType: "Intake",
+            componentType: "step",
+            componentName: "Close Case",
+            avgMs: 3550,
+          },
+          {
+            caseType: "Intake",
+            componentType: "step",
+            componentName: "Confirm",
+            avgMs: 3558.5,
+          },
+          {
+            caseType: "Intake",
+            componentType: "step",
+            componentName: "Finalize Review",
+            avgMs: 5374.5,
+          },
+          {
+            caseType: "Intake",
+            componentType: "step",
+            componentName: "Personal",
+            avgMs: 28518.85714285714,
+          },
+          {
+            caseType: "Intake",
+            componentType: "step",
+            componentName: "Relations",
+            avgMs: 8027,
+          },
+          {
+            caseType: "Intake",
+            componentType: "step",
+            componentName: "Review Details",
+            avgMs: 2154.9166666666665,
+          },
+          {
+            caseType: "Unknown",
+            componentType: "stage",
+            componentName: "Registration",
+            avgMs: 33386,
+          },
+          {
+            caseType: "Unknown",
+            componentType: "stage",
+            componentName: "Review",
+            avgMs: 10623,
+          },
+          {
+            caseType: "Unknown",
+            componentType: "step",
+            componentName: "Confirm",
+            avgMs: 2869,
+          },
+          {
+            caseType: "Unknown",
+            componentType: "step",
+            componentName: "Finalize Review",
+            avgMs: 4893,
+          },
+          {
+            caseType: "Unknown",
+            componentType: "step",
+            componentName: "Personal",
+            avgMs: 17489.5,
+          },
+          {
+            caseType: "Unknown",
+            componentType: "step",
+            componentName: "Relations",
+            avgMs: 4796,
+          },
+          {
+            caseType: "Unknown",
+            componentType: "step",
+            componentName: "Review Details",
+            avgMs: 2859,
+          },
+        ],
+        pagination: {
+          page: 1,
+          pageSize: 20,
+          totalRecords: 150,
+          totalPages: 8,
+        },
+        metadata: {
+          fetchedAt: executedAt,
+          source: "cases_table",
+        },
+      },
+    });
+  }
+);
+
 app.listen(PORT, () => {
   console.log("Stubbed API running on port", PORT);
 });
