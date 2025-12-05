@@ -333,6 +333,74 @@ app.get("/:app/api/data-model/:id", (req, res) => {
   }
 });
 
+// Utility → Convert file id to readable name
+function toLabel(id) {
+  return id
+    .replace(/-/g, " ") // replace hyphens with space
+    .replace(/\b\w/g, (c) => c.toUpperCase()); // capitalize words
+}
+
+// 🔥 GET All Functions (Global)
+// 🔥 GET All Functions (Global)
+app.get("/:app/api/function", (req, res) => {
+  const baseDir = path.join(__dirname, "database", "functions");
+
+  try {
+    const categories = fs.readdirSync(baseDir);
+
+    const results = [];
+
+    categories.forEach((category) => {
+      const categoryDir = path.join(baseDir, category);
+
+      // ⛔ Skip files like .gitkeep - ensure it's a directory
+      if (!fs.statSync(categoryDir).isDirectory()) return;
+
+      const files = fs
+        .readdirSync(categoryDir)
+        .filter((f) => f.endsWith(".js"));
+
+      files.forEach((file) => {
+        const id = file.replace(".js", "");
+        results.push({
+          id,
+          name: id.replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase()),
+          category,
+        });
+      });
+    });
+
+    return res.json(results);
+  } catch (err) {
+    console.error("Error loading functions:", err.message);
+    return res.status(404).json({error: "Functions not found"});
+  }
+});
+
+// 🔥 GET Function File Content by Category & ID
+app.get("/:app/api/function/:category/:id", (req, res) => {
+  const baseDir = path.join(__dirname, "database", "functions");
+  const category = req.params.category;
+  const fileId = req.params.id; // e.g. "calculate-age"
+
+  const filePath = path.join(baseDir, category, `${fileId}.js`);
+
+  try {
+    if (!fs.existsSync(filePath)) {
+      return res.status(404).json({
+        error: `Function '${fileId}' not found in category '${category}'`,
+      });
+    }
+
+    // Read file content and return as text
+    const content = fs.readFileSync(filePath, "utf-8");
+    return res.type("text/javascript").send(content);
+  } catch (err) {
+    console.error("Error loading function:", err.message);
+    return res.status(500).json({error: "Error reading function file"});
+  }
+});
+
 app.listen(PORT, () => {
   console.log("Stubbed API running on port", PORT);
 });
