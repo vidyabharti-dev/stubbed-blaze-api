@@ -279,34 +279,29 @@ app.get("/:app/api/case/:caseId/audit-trail", (req, res) => {
   }
 });
 
+// GET all data models (summary list)
 app.get("/:app/api/data-model", (req, res) => {
-  const appName = req.params.app;
-
   try {
-    const dataModels = require(`./database/${appName}/data-model.js`);
-    return res.json(dataModels);
+    // Require a central index file that exports summary list of all models
+    const dataModelsSummary = require(`./database/data-models/index.js`);
+    return res.json(dataModelsSummary);
   } catch (err) {
-    console.error("Error loading data-models.js:", err.message);
-    return res.status(404).json({error: "Data models not found for this app"});
+    console.error("Error loading data models summary:", err.message);
+    return res.status(500).json({error: "Failed to load data models"});
   }
 });
 
+// GET data model by ID (full details)
 app.get("/:app/api/data-model/:id", (req, res) => {
-  const appName = req.params.app;
   const id = req.params.id;
 
   try {
-    const dataModels = require(`./database/${appName}/data-model.js`);
-    const model = dataModels.find((m) => m.id === id);
-
-    if (!model) {
-      return res.status(404).json({error: "Data model not found"});
-    }
-
+    // Dynamically load the specific model file by id from data-models folder
+    const model = require(`./database/data-models/${id}.js`);
     return res.json(model);
   } catch (err) {
-    console.error("Error loading data-models.js:", err.message);
-    return res.status(404).json({error: "Data models not found for this app"});
+    console.error(`Error loading data model ${id}:`, err.message);
+    return res.status(404).json({error: "Data model not found"});
   }
 });
 

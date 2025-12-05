@@ -32,6 +32,7 @@ module.exports = [
     label: "Role",
     description: "User role with permissions",
     extends: null,
+
     isProtected: true,
   },
   {
