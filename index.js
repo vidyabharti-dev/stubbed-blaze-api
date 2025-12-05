@@ -165,17 +165,32 @@ app.get("/:app/api/task-queue", (req, res) => {
 });
 
 // GET View Definition by file id
+// GET View Definition by file id
 app.get("/:app/api/view/:id", (req, res) => {
   const appName = req.params.app;
-  const fileId = req.params.id; // includes .json extension
+  const fileId = req.params.id;
 
-  try {
-    const viewData = require(`./database/${appName}/views/${fileId}`);
-    res.json(viewData);
-  } catch (err) {
-    return res.status(404).json({error: "View file not found"});
+  // special case: person-details-basic -> load the file
+  if (fileId === "person-details-basic") {
+    try {
+      const viewData = require(`./database/${appName}/views/${fileId}.json`);
+      return res.json(viewData);
+    } catch (err) {
+      return res.status(404).json({ error: "View file not found" });
+    }
   }
+
+  // for all other view ids → return generic data (no fields)
+  return res.json({
+    id: fileId,
+    context: {
+      type: "data",
+      entity: "person"
+    },
+    fields: [] // no fields included
+  });
 });
+
 
 function generateRandomTasks(count, name) {
   return Array.from({length: count}).map(() => ({
