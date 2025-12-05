@@ -1,7 +1,7 @@
 const express = require("express");
 const cors = require("cors");
 const path = require("path");
-
+const fs = require("fs");
 const app = express();
 
 const allowedOrigins = [
@@ -192,6 +192,34 @@ app.get("/:app/api/view/:id", (req, res) => {
     console.error("Error loading applicant-info:", err.message);
     return res.status(404).json({error: "applicant-info view not found"});
   }
+});
+
+app.get("/:app/api/view", (req, res) => {
+  const appName = req.params.app;
+  const viewsDir = path.join(__dirname, "database", appName, "views");
+
+  fs.readdir(viewsDir, (err, files) => {
+    if (err) {
+      console.error(
+        `Error reading views folder for app ${appName}:`,
+        err.message
+      );
+      return res
+        .status(404)
+        .json({error: "Views folder not found for this app"});
+    }
+
+    // Filter only .json files
+    const jsonFiles = files.filter((f) => f.endsWith(".json"));
+
+    // Map to id/name objects (id = filename without .json, name = filename without .json)
+    const viewsList = jsonFiles.map((file) => {
+      const id = path.basename(file, ".json");
+      return {id, name: id};
+    });
+
+    res.json(viewsList);
+  });
 });
 
 function generateRandomTasks(count, name) {
