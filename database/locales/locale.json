@@ -1,0 +1,44 @@
+{
+  "languages": [
+    {
+      "code": "en",
+      "label": "English",
+      "nativeLabel": "English",
+      "flag": "🇬🇧",
+      "isDefault": true,
+      "direction": "ltr"
+    },
+    {
+      "code": "de",
+      "label": "German",
+      "nativeLabel": "Deutsch",
+      "flag": "🇩🇪",
+      "isDefault": false,
+      "direction": "ltr"
+    },
+    {
+      "code": "nl",
+      "label": "Dutch",
+      "nativeLabel": "Nederlands",
+      "flag": "🇳🇱",
+      "isDefault": false,
+      "direction": "ltr"
+    },
+    {
+      "code": "fr",
+      "label": "French",
+      "nativeLabel": "Français",
+      "flag": "🇫🇷",
+      "isDefault": false,
+      "direction": "ltr"
+    },
+    {
+      "code": "es",
+      "label": "Spanish",
+      "nativeLabel": "Español",
+      "flag": "🇪🇸",
+      "isDefault": false,
+      "direction": "ltr"
+    }
+  ]
+}

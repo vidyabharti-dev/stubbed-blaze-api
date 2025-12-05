@@ -56,6 +56,9 @@ app.use("/:app/*rest", (req, res, next) => {
   next();
 });
 
+const dashboardRoute = require("./routes/dashboard");
+app.use("/", dashboardRoute);
+
 // 🔥 GET all case types
 app.get("/:app/api/case-type", (req, res) => {
   const appName = req.params.app;
@@ -398,6 +401,39 @@ app.get("/:app/api/function/:category/:id", (req, res) => {
   } catch (err) {
     console.error("Error loading function:", err.message);
     return res.status(500).json({error: "Error reading function file"});
+  }
+});
+
+// 🔥 GET Locales
+app.get("/:app/api/locale", (req, res) => {
+  try {
+    const locale = require("./database/locales/locale.json");
+    return res.json(locale);
+  } catch (err) {
+    console.error("Error loading locale.json:", err.message);
+    return res.status(500).json({error: "Locales not found"});
+  }
+});
+// GET Locale translations by language code
+app.get("/:app/api/locale/:lang", (req, res) => {
+  const lang = req.params.lang;
+  const localePath = path.join(
+    __dirname,
+    "database",
+    "locales",
+    `${lang}.json`
+  );
+
+  if (!fs.existsSync(localePath)) {
+    return res.status(404).json({error: `Locale '${lang}' not found`});
+  }
+
+  try {
+    const data = fs.readFileSync(localePath, "utf-8");
+    return res.json(JSON.parse(data));
+  } catch (err) {
+    console.error("Error loading locale data:", err.message);
+    return res.status(500).json({error: "Failed to read locale file"});
   }
 });
 
