@@ -279,6 +279,37 @@ app.get("/:app/api/case/:caseId/audit-trail", (req, res) => {
   }
 });
 
+app.get("/:app/api/data-model", (req, res) => {
+  const appName = req.params.app;
+
+  try {
+    const dataModels = require(`./database/${appName}/data-model.js`);
+    return res.json(dataModels);
+  } catch (err) {
+    console.error("Error loading data-models.js:", err.message);
+    return res.status(404).json({error: "Data models not found for this app"});
+  }
+});
+
+app.get("/:app/api/data-model/:id", (req, res) => {
+  const appName = req.params.app;
+  const id = req.params.id;
+
+  try {
+    const dataModels = require(`./database/${appName}/data-model.js`);
+    const model = dataModels.find((m) => m.id === id);
+
+    if (!model) {
+      return res.status(404).json({error: "Data model not found"});
+    }
+
+    return res.json(model);
+  } catch (err) {
+    console.error("Error loading data-models.js:", err.message);
+    return res.status(404).json({error: "Data models not found for this app"});
+  }
+});
+
 app.listen(PORT, () => {
   console.log("Stubbed API running on port", PORT);
 });
