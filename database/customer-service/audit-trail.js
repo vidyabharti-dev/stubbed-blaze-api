@@ -1,0 +1,42 @@
+module.exports = [
+  {
+    key: "A-0001",
+    name: "Case Created",
+    timestamp: "2025-01-12T10:40:05Z",
+    actor: {id: "system", name: "System"},
+    type: "creation",
+    description: "Case initialized with default values.",
+  },
+  {
+    key: "A-0002",
+    name: "Assignment Completed",
+    timestamp: "2025-01-12T12:15:22Z",
+    actor: {id: "U-101", name: "John Doe"},
+    type: "update",
+    description: "Verification step completed.",
+  },
+  {
+    key: "A-0003",
+    name: "Document Uploaded",
+    timestamp: "2025-01-13T08:55:41Z",
+    actor: {id: "U-102", name: "Sara Lee"},
+    type: "document_upload",
+    description: "Proof-of-Address.jpg uploaded.",
+  },
+  {
+    key: "A-0004",
+    name: "Field Updated",
+    timestamp: "2025-01-14T09:12:55Z",
+    actor: {id: "U-103", name: "Maria Gomez"},
+    type: "data_change",
+    description: "Updated customer's contact information.",
+  },
+  {
+    key: "A-0005",
+    name: "Case Routed",
+    timestamp: "2025-01-15T16:33:10Z",
+    actor: {id: "U-101", name: "John Doe"},
+    type: "routing",
+    description: "Case routed to verification team.",
+  },
+];

@@ -6,7 +6,8 @@ const app = express();
 
 const allowedOrigins = [
   "https://id-preview--5668ff49-221b-4c38-9ae4-1d64dd3d1536.lovable.app",
-  "https://lovable.dev","https://id-preview--3c52ef72-55a2-4d1b-97a9-e192c21b3cdc.lovable.app"
+  "https://lovable.dev",
+  "https://id-preview--3c52ef72-55a2-4d1b-97a9-e192c21b3cdc.lovable.app",
   // you can add other allowed origins here if needed
 ];
 
@@ -177,7 +178,9 @@ app.get("/:app/api/view/:id", (req, res) => {
       return res.json(viewData);
     } catch (err) {
       console.error("Error loading person-details-basic:", err.message);
-      return res.status(404).json({ error: "person-details-basic view not found" });
+      return res
+        .status(404)
+        .json({error: "person-details-basic view not found"});
     }
   }
 
@@ -187,11 +190,9 @@ app.get("/:app/api/view/:id", (req, res) => {
     return res.json(applicantView);
   } catch (err) {
     console.error("Error loading applicant-info:", err.message);
-    return res.status(404).json({ error: "applicant-info view not found" });
+    return res.status(404).json({error: "applicant-info view not found"});
   }
 });
-
-
 
 function generateRandomTasks(count, name) {
   return Array.from({length: count}).map(() => ({
@@ -229,6 +230,53 @@ app.get("/:app/api/task/queue/:id", (req, res) => {
 
   console.log("Queue tasks for:", queueTaskId, "->", response.length, "items");
   res.json(response);
+});
+
+// 🔥 GET - Notes for a Case (from DB file)
+app.get("/:app/api/case/:caseId/note", (req, res) => {
+  const appName = req.params.app;
+  const caseId = req.params.caseId;
+
+  try {
+    const notes = require(`./database/${appName}/notes.js`);
+    console.log(`Notes for case ${caseId} ->`, notes.length, "items");
+    return res.json(notes);
+  } catch (err) {
+    console.error("Error loading notes.js:", err.message);
+    return res.status(404).json({error: "Notes not found for this app"});
+  }
+});
+
+// 🔥 GET - Documents for a Case (from DB file)
+app.get("/:app/api/case/:caseId/document", (req, res) => {
+  const appName = req.params.app;
+  const caseId = req.params.caseId;
+
+  try {
+    const docs = require(`./database/${appName}/documents.js`);
+    console.log(`Documents for case ${caseId} ->`, docs.length, "items");
+    return res.json(docs);
+  } catch (err) {
+    console.error("Error loading documents.js:", err.message);
+    return res.status(404).json({error: "Documents not found for this app"});
+  }
+});
+app.get("/:app/api/case/:caseId/audit-trail", (req, res) => {
+  const appName = req.params.app;
+  const caseId = req.params.caseId;
+
+  try {
+    const auditTrail = require(`./database/${appName}/audit-trail.js`);
+    console.log(
+      `Audit trail for case ${caseId} ->`,
+      auditTrail.length,
+      "items"
+    );
+    return res.json(auditTrail);
+  } catch (err) {
+    console.error("Error loading audit-trail.js:", err.message);
+    return res.status(404).json({error: "Audit trail not found for this app"});
+  }
 });
 
 app.listen(PORT, () => {
