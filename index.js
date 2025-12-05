@@ -168,28 +168,29 @@ app.get("/:app/api/task-queue", (req, res) => {
 // GET View Definition by file id
 app.get("/:app/api/view/:id", (req, res) => {
   const appName = req.params.app;
-  const fileId = req.params.id;
+  const fileId = req.params.id; // e.g. "person-details-basic" or other id
 
-  // special case: person-details-basic -> load the file
+  // If request is exactly person-details-basic -> load that file
   if (fileId === "person-details-basic") {
     try {
-      const viewData = require(`./database/${appName}/views/${fileId}.json`);
+      const viewData = require(`./database/${appName}/views/person-details-basic.json`);
       return res.json(viewData);
     } catch (err) {
-      return res.status(404).json({ error: "View file not found" });
+      console.error("Error loading person-details-basic:", err.message);
+      return res.status(404).json({ error: "person-details-basic view not found" });
     }
   }
 
-  // for all other view ids → return generic data (no fields)
-  return res.json({
-    id: fileId,
-    context: {
-      type: "data",
-      entity: "person"
-    },
-    fields: [] // no fields included
-  });
+  // For any other id -> return applicant-info.json
+  try {
+    const applicantView = require(`./database/${appName}/views/applicant-info.json`);
+    return res.json(applicantView);
+  } catch (err) {
+    console.error("Error loading applicant-info:", err.message);
+    return res.status(404).json({ error: "applicant-info view not found" });
+  }
 });
+
 
 
 function generateRandomTasks(count, name) {
