@@ -1,0 +1,3510 @@
+{
+  "summary": {
+    "duplication": {
+      "duplicatedLines": 1671,
+      "totalLines": 3228,
+      "percentage": 51.77,
+      "clones": 0
+    },
+    "complexity": {
+      "filesAnalyzed": 40,
+      "totalCyclomatic": 166,
+      "avgCyclomaticPerFunction": 1.71,
+      "avgMaintainability": 94.34
+    },
+    "deadcode": {
+      "unusedFiles": 18,
+      "unusedExports": 0,
+      "unusedDependencies": 6,
+      "unlistedDependencies": 0
+    }
+  },
+  "duplication": {
+    "statistics": {
+      "detectionDate": "2025-12-05T18:16:40.107Z",
+      "formats": {
+        "javascript": {
+          "sources": {
+            "core/data-model/user.js": {
+              "lines": 154,
+              "tokens": 839,
+              "sources": 1,
+              "clones": 5,
+              "duplicatedLines": 462,
+              "duplicatedTokens": 2464,
+              "percentage": 300,
+              "percentageTokens": 293.68,
+              "newDuplicatedLines": 0,
+              "newClones": 0
+            },
+            "core/data-model/role.js": {
+              "lines": 29,
+              "tokens": 165,
+              "sources": 1,
+              "clones": 0,
+              "duplicatedLines": 0,
+              "duplicatedTokens": 0,
+              "percentage": 0,
+              "percentageTokens": 0,
+              "newDuplicatedLines": 0,
+              "newClones": 0
+            },
+            "core/data-model/production_model.js": {
+              "lines": 139,
+              "tokens": 798,
+              "sources": 1,
+              "clones": 4,
+              "duplicatedLines": 291,
+              "duplicatedTokens": 1541,
+              "percentage": 209.35,
+              "percentageTokens": 193.11,
+              "newDuplicatedLines": 0,
+              "newClones": 0
+            },
+            "core/data-model/product_model.js": {
+              "lines": 159,
+              "tokens": 922,
+              "sources": 1,
+              "clones": 1,
+              "duplicatedLines": 73,
+              "duplicatedTokens": 387,
+              "percentage": 45.91,
+              "percentageTokens": 41.97,
+              "newDuplicatedLines": 0,
+              "newClones": 0
+            },
+            "core/data-model/person.js": {
+              "lines": 129,
+              "tokens": 701,
+              "sources": 1,
+              "clones": 1,
+              "duplicatedLines": 122,
+              "duplicatedTokens": 655,
+              "percentage": 94.57,
+              "percentageTokens": 93.44,
+              "newDuplicatedLines": 0,
+              "newClones": 0
+            },
+            "core/data-model/order_model.js": {
+              "lines": 149,
+              "tokens": 860,
+              "sources": 1,
+              "clones": 1,
+              "duplicatedLines": 73,
+              "duplicatedTokens": 387,
+              "percentage": 48.99,
+              "percentageTokens": 45,
+              "newDuplicatedLines": 0,
+              "newClones": 0
+            },
+            "core/data-model/customer.js": {
+              "lines": 151,
+              "tokens": 817,
+              "sources": 1,
+              "clones": 1,
+              "duplicatedLines": 123,
+              "duplicatedTokens": 662,
+              "percentage": 81.46,
+              "percentageTokens": 81.03,
+              "newDuplicatedLines": 0,
+              "newClones": 0
+            },
+            "core/data-model/client_model.js": {
+              "lines": 149,
+              "tokens": 860,
+              "sources": 1,
+              "clones": 1,
+              "duplicatedLines": 73,
+              "duplicatedTokens": 387,
+              "percentage": 48.99,
+              "percentageTokens": 45,
+              "newDuplicatedLines": 0,
+              "newClones": 0
+            },
+            "core/data-model/blaze-entity.js": {
+              "lines": 78,
+              "tokens": 419,
+              "sources": 1,
+              "clones": 1,
+              "duplicatedLines": 72,
+              "duplicatedTokens": 380,
+              "percentage": 92.31,
+              "percentageTokens": 90.69,
+              "newDuplicatedLines": 0,
+              "newClones": 0
+            },
+            "core/data-model/address.js": {
+              "lines": 121,
+              "tokens": 646,
+              "sources": 1,
+              "clones": 1,
+              "duplicatedLines": 73,
+              "duplicatedTokens": 387,
+              "percentage": 60.33,
+              "percentageTokens": 59.91,
+              "newDuplicatedLines": 0,
+              "newClones": 0
+            },
+            "core/case-type/wholesale-order.js": {
+              "lines": 163,
+              "tokens": 1089,
+              "sources": 1,
+              "clones": 0,
+              "duplicatedLines": 0,
+              "duplicatedTokens": 0,
+              "percentage": 0,
+              "percentageTokens": 0,
+              "newDuplicatedLines": 0,
+              "newClones": 0
+            },
+            "core/case-type/retail-customer-order.js": {
+              "lines": 133,
+              "tokens": 886,
+              "sources": 1,
+              "clones": 0,
+              "duplicatedLines": 0,
+              "duplicatedTokens": 0,
+              "percentage": 0,
+              "percentageTokens": 0,
+              "newDuplicatedLines": 0,
+              "newClones": 0
+            },
+            "core/case-type/product-development.js": {
+              "lines": 163,
+              "tokens": 1083,
+              "sources": 1,
+              "clones": 0,
+              "duplicatedLines": 0,
+              "duplicatedTokens": 0,
+              "percentage": 0,
+              "percentageTokens": 0,
+              "newDuplicatedLines": 0,
+              "newClones": 0
+            },
+            "core/case-type/fashion-show-production.js": {
+              "lines": 133,
+              "tokens": 889,
+              "sources": 1,
+              "clones": 0,
+              "duplicatedLines": 0,
+              "duplicatedTokens": 0,
+              "percentage": 0,
+              "percentageTokens": 0,
+              "newDuplicatedLines": 0,
+              "newClones": 0
+            },
+            "core/case-type/bespoke-commission.js": {
+              "lines": 163,
+              "tokens": 1098,
+              "sources": 1,
+              "clones": 0,
+              "duplicatedLines": 0,
+              "duplicatedTokens": 0,
+              "percentage": 0,
+              "percentageTokens": 0,
+              "newDuplicatedLines": 0,
+              "newClones": 0
+            },
+            "client/src/portal/standard/index.js": {
+              "lines": 19,
+              "tokens": 99,
+              "sources": 1,
+              "clones": 0,
+              "duplicatedLines": 0,
+              "duplicatedTokens": 0,
+              "percentage": 0,
+              "percentageTokens": 0,
+              "newDuplicatedLines": 0,
+              "newClones": 0
+            },
+            "client/src/component/wholesale-order-shipping-invoice-shipping-billing-close.js": {
+              "lines": 49,
+              "tokens": 390,
+              "sources": 1,
+              "clones": 36,
+              "duplicatedLines": 830,
+              "duplicatedTokens": 5034,
+              "percentage": 1693.88,
+              "percentageTokens": 1290.77,
+              "newDuplicatedLines": 0,
+              "newClones": 0
+            },
+            "client/src/component/wholesale-order-sampling-approval-sample-approval.js": {
+              "lines": 49,
+              "tokens": 416,
+              "sources": 1,
+              "clones": 3,
+              "duplicatedLines": 65,
+              "duplicatedTokens": 439,
+              "percentage": 132.65,
+              "percentageTokens": 105.53,
+              "newDuplicatedLines": 0,
+              "newClones": 0
+            },
+            "client/src/component/wholesale-order-quality-check-quality-control-sign-off.js": {
+              "lines": 49,
+              "tokens": 364,
+              "sources": 1,
+              "clones": 2,
+              "duplicatedLines": 45,
+              "duplicatedTokens": 284,
+              "percentage": 91.84,
+              "percentageTokens": 78.02,
+              "newDuplicatedLines": 0,
+              "newClones": 0
+            },
+            "client/src/component/wholesale-order-order-received-order-receipt-validation.js": {
+              "lines": 49,
+              "tokens": 442,
+              "sources": 1,
+              "clones": 2,
+              "duplicatedLines": 45,
+              "duplicatedTokens": 284,
+              "percentage": 91.84,
+              "percentageTokens": 64.25,
+              "newDuplicatedLines": 0,
+              "newClones": 0
+            },
+            "client/src/component/wholesale-order-manufacturing-manufacturing-run.js": {
+              "lines": 49,
+              "tokens": 390,
+              "sources": 1,
+              "clones": 2,
+              "duplicatedLines": 45,
+              "duplicatedTokens": 258,
+              "percentage": 91.84,
+              "percentageTokens": 66.15,
+              "newDuplicatedLines": 0,
+              "newClones": 0
+            },
+            "client/src/component/retail-customer-order-purchase-order-capture.js": {
+              "lines": 49,
+              "tokens": 442,
+              "sources": 1,
+              "clones": 2,
+              "duplicatedLines": 45,
+              "duplicatedTokens": 284,
+              "percentage": 91.84,
+              "percentageTokens": 64.25,
+              "newDuplicatedLines": 0,
+              "newClones": 0
+            },
+            "client/src/component/retail-customer-order-fulfillment-pick-pack-prepare.js": {
+              "lines": 49,
+              "tokens": 390,
+              "sources": 1,
+              "clones": 3,
+              "duplicatedLines": 65,
+              "duplicatedTokens": 413,
+              "percentage": 132.65,
+              "percentageTokens": 105.9,
+              "newDuplicatedLines": 0,
+              "newClones": 0
+            },
+            "client/src/component/retail-customer-order-delivery-dispatch-delivery.js": {
+              "lines": 49,
+              "tokens": 390,
+              "sources": 1,
+              "clones": 2,
+              "duplicatedLines": 45,
+              "duplicatedTokens": 284,
+              "percentage": 91.84,
+              "percentageTokens": 72.82,
+              "newDuplicatedLines": 0,
+              "newClones": 0
+            },
+            "client/src/component/retail-customer-order-aftercare-aftercare-alterations.js": {
+              "lines": 49,
+              "tokens": 390,
+              "sources": 1,
+              "clones": 5,
+              "duplicatedLines": 105,
+              "duplicatedTokens": 749,
+              "percentage": 214.29,
+              "percentageTokens": 192.05,
+              "newDuplicatedLines": 0,
+              "newClones": 0
+            },
+            "client/src/component/product-development-sampling-sample-creation-review.js": {
+              "lines": 49,
+              "tokens": 390,
+              "sources": 1,
+              "clones": 2,
+              "duplicatedLines": 45,
+              "duplicatedTokens": 284,
+              "percentage": 91.84,
+              "percentageTokens": 72.82,
+              "newDuplicatedLines": 0,
+              "newClones": 0
+            },
+            "client/src/component/product-development-production-handover-production-handover.js": {
+              "lines": 49,
+              "tokens": 390,
+              "sources": 1,
+              "clones": 3,
+              "duplicatedLines": 65,
+              "duplicatedTokens": 439,
+              "percentage": 132.65,
+              "percentageTokens": 112.56,
+              "newDuplicatedLines": 0,
+              "newClones": 0
+            },
+            "client/src/component/product-development-launch-launch-commercialization.js": {
+              "lines": 49,
+              "tokens": 364,
+              "sources": 1,
+              "clones": 2,
+              "duplicatedLines": 45,
+              "duplicatedTokens": 284,
+              "percentage": 91.84,
+              "percentageTokens": 78.02,
+              "newDuplicatedLines": 0,
+              "newClones": 0
+            },
+            "client/src/component/product-development-design-design-specification.js": {
+              "lines": 49,
+              "tokens": 390,
+              "sources": 1,
+              "clones": 3,
+              "duplicatedLines": 65,
+              "duplicatedTokens": 413,
+              "percentage": 132.65,
+              "percentageTokens": 105.9,
+              "newDuplicatedLines": 0,
+              "newClones": 0
+            },
+            "client/src/component/product-development-concept-concept-brief.js": {
+              "lines": 49,
+              "tokens": 416,
+              "sources": 1,
+              "clones": 2,
+              "duplicatedLines": 45,
+              "duplicatedTokens": 284,
+              "percentage": 91.84,
+              "percentageTokens": 68.27,
+              "newDuplicatedLines": 0,
+              "newClones": 0
+            },
+            "client/src/component/knip-dynamic-registry.js": {
+              "lines": 69,
+              "tokens": 345,
+              "sources": 1,
+              "clones": 0,
+              "duplicatedLines": 0,
+              "duplicatedTokens": 0,
+              "percentage": 0,
+              "percentageTokens": 0,
+              "newDuplicatedLines": 0,
+              "newClones": 0
+            },
+            "client/src/component/fashion-show-production-runway-execution-event-execution.js": {
+              "lines": 49,
+              "tokens": 416,
+              "sources": 1,
+              "clones": 2,
+              "duplicatedLines": 45,
+              "duplicatedTokens": 310,
+              "percentage": 91.84,
+              "percentageTokens": 74.52,
+              "newDuplicatedLines": 0,
+              "newClones": 0
+            },
+            "client/src/component/fashion-show-production-rehearsal-fittings-fittings-technical-rehearsal.js": {
+              "lines": 49,
+              "tokens": 390,
+              "sources": 1,
+              "clones": 2,
+              "duplicatedLines": 45,
+              "duplicatedTokens": 336,
+              "percentage": 91.84,
+              "percentageTokens": 86.15,
+              "newDuplicatedLines": 0,
+              "newClones": 0
+            },
+            "client/src/component/fashion-show-production-post-show-archiving-archive-follow-up-orders.js": {
+              "lines": 49,
+              "tokens": 416,
+              "sources": 1,
+              "clones": 3,
+              "duplicatedLines": 65,
+              "duplicatedTokens": 465,
+              "percentage": 132.65,
+              "percentageTokens": 111.78,
+              "newDuplicatedLines": 0,
+              "newClones": 0
+            },
+            "client/src/component/fashion-show-production-concept-casting-creative-concept-casting.js": {
+              "lines": 49,
+              "tokens": 416,
+              "sources": 1,
+              "clones": 2,
+              "duplicatedLines": 45,
+              "duplicatedTokens": 310,
+              "percentage": 91.84,
+              "percentageTokens": 74.52,
+              "newDuplicatedLines": 0,
+              "newClones": 0
+            },
+            "client/src/component/bespoke-commission-production-production-quality-control.js": {
+              "lines": 49,
+              "tokens": 416,
+              "sources": 1,
+              "clones": 2,
+              "duplicatedLines": 45,
+              "duplicatedTokens": 336,
+              "percentage": 91.84,
+              "percentageTokens": 80.77,
+              "newDuplicatedLines": 0,
+              "newClones": 0
+            },
+            "client/src/component/bespoke-commission-measurement-design-measurements-design-approval.js": {
+              "lines": 49,
+              "tokens": 416,
+              "sources": 1,
+              "clones": 2,
+              "duplicatedLines": 45,
+              "duplicatedTokens": 284,
+              "percentage": 91.84,
+              "percentageTokens": 68.27,
+              "newDuplicatedLines": 0,
+              "newClones": 0
+            },
+            "client/src/component/bespoke-commission-inquiry-inquiry-capture.js": {
+              "lines": 49,
+              "tokens": 442,
+              "sources": 1,
+              "clones": 2,
+              "duplicatedLines": 45,
+              "duplicatedTokens": 258,
+              "percentage": 91.84,
+              "percentageTokens": 58.37,
+              "newDuplicatedLines": 0,
+              "newClones": 0
+            },
+            "client/src/component/bespoke-commission-delivery-final-delivery-aftercare.js": {
+              "lines": 49,
+              "tokens": 390,
+              "sources": 1,
+              "clones": 2,
+              "duplicatedLines": 45,
+              "duplicatedTokens": 362,
+              "percentage": 91.84,
+              "percentageTokens": 92.82,
+              "newDuplicatedLines": 0,
+              "newClones": 0
+            },
+            "client/src/component/bespoke-commission-agreement-pricing-agreement-pricing.js": {
+              "lines": 49,
+              "tokens": 416,
+              "sources": 1,
+              "clones": 2,
+              "duplicatedLines": 45,
+              "duplicatedTokens": 310,
+              "percentage": 91.84,
+              "percentageTokens": 74.52,
+              "newDuplicatedLines": 0,
+              "newClones": 0
+            }
+          },
+          "total": {
+            "lines": 3228,
+            "tokens": 21798,
+            "sources": 40,
+            "clones": 52,
+            "duplicatedLines": 1671,
+            "duplicatedTokens": 9977,
+            "percentage": 51.77,
+            "percentageTokens": 45.77,
+            "newDuplicatedLines": 0,
+            "newClones": 0
+          }
+        }
+      },
+      "total": {
+        "lines": 3228,
+        "tokens": 21798,
+        "sources": 40,
+        "clones": 52,
+        "duplicatedLines": 1671,
+        "duplicatedTokens": 9977,
+        "percentage": 51.77,
+        "percentageTokens": 45.77,
+        "newDuplicatedLines": 0,
+        "newClones": 0
+      }
+    },
+    "duplicates": [
+      {
+        "format": "javascript",
+        "lines": 73,
+        "fragment": ",\n  \"attributes\": [\n    {\n      \"id\": \"id\",\n      \"type\": \"string\",\n      \"label\": \"ID\",\n      \"required\": true,\n      \"unique\": true,\n      \"indexed\": true\n    },\n    {\n      \"id\": \"description\",\n      \"type\": \"string\",\n      \"label\": \"Description\",\n      \"defaultValue\": \"\"\n    },\n    {\n      \"id\": \"startDate\",\n      \"type\": \"date\",\n      \"label\": \"Start Date\",\n      \"required\": true\n    },\n    {\n      \"id\": \"endDate\",\n      \"type\": \"date\",\n      \"label\": \"End Date\"\n    },\n    {\n      \"id\": \"createdBy\",\n      \"type\": \"string\",\n      \"label\": \"Created By\",\n      \"accessControl\": {\n        \"read\": [\n          \"admin\"\n        ],\n        \"write\": [\n          \"admin\"\n        ]\n      }\n    },\n    {\n      \"id\": \"createdAt\",\n      \"type\": \"datetime\",\n      \"label\": \"Created At\"\n    },\n    {\n      \"id\": \"status\",\n      \"type\": \"string\",\n      \"label\": \"Status\",\n      \"defaultValue\": \"draft\",\n      \"allowedValues\": [\n        \"draft\",\n        \"active\",\n        \"inactive\",\n        \"archived\"\n      ]\n    },\n    {\n      \"id\": \"version\",\n      \"type\": \"number\",\n      \"label\": \"Version\",\n      \"defaultValue\": 1\n    },\n    {\n      \"id\": \"createdAge\",\n      \"type\": \"computed\",\n      \"label\": \"Age (days)\",\n      \"dependencies\": [\n        \"createdAt\"\n      ]\n    },\n    {\n      \"id\": \"production_id\"",
+        "tokens": 0,
+        "firstFile": {
+          "name": "core/data-model/production_model.js",
+          "start": 6,
+          "end": 78,
+          "startLoc": {
+            "line": 6,
+            "column": 5,
+            "position": 36
+          },
+          "endLoc": {
+            "line": 78,
+            "column": 16,
+            "position": 416
+          }
+        },
+        "secondFile": {
+          "name": "core/data-model/user.js",
+          "start": 6,
+          "end": 78,
+          "startLoc": {
+            "line": 6,
+            "column": 6,
+            "position": 36
+          },
+          "endLoc": {
+            "line": 78,
+            "column": 12,
+            "position": 416
+          }
+        }
+      },
+      {
+        "format": "javascript",
+        "lines": 74,
+        "fragment": ",\n  \"isEditable\": true,\n  \"attributes\": [\n    {\n      \"id\": \"id\",\n      \"type\": \"string\",\n      \"label\": \"ID\",\n      \"required\": true,\n      \"unique\": true,\n      \"indexed\": true\n    },\n    {\n      \"id\": \"description\",\n      \"type\": \"string\",\n      \"label\": \"Description\",\n      \"defaultValue\": \"\"\n    },\n    {\n      \"id\": \"startDate\",\n      \"type\": \"date\",\n      \"label\": \"Start Date\",\n      \"required\": true\n    },\n    {\n      \"id\": \"endDate\",\n      \"type\": \"date\",\n      \"label\": \"End Date\"\n    },\n    {\n      \"id\": \"createdBy\",\n      \"type\": \"string\",\n      \"label\": \"Created By\",\n      \"accessControl\": {\n        \"read\": [\n          \"admin\"\n        ],\n        \"write\": [\n          \"admin\"\n        ]\n      }\n    },\n    {\n      \"id\": \"createdAt\",\n      \"type\": \"datetime\",\n      \"label\": \"Created At\"\n    },\n    {\n      \"id\": \"status\",\n      \"type\": \"string\",\n      \"label\": \"Status\",\n      \"defaultValue\": \"draft\",\n      \"allowedValues\": [\n        \"draft\",\n        \"active\",\n        \"inactive\",\n        \"archived\"\n      ]\n    },\n    {\n      \"id\": \"version\",\n      \"type\": \"number\",\n      \"label\": \"Version\",\n      \"defaultValue\": 1\n    },\n    {\n      \"id\": \"createdAge\",\n      \"type\": \"computed\",\n      \"label\": \"Age (days)\",\n      \"dependencies\": [\n        \"createdAt\"\n      ]\n    },\n    {\n      \"id\": \"product_id\"",
+        "tokens": 0,
+        "firstFile": {
+          "name": "core/data-model/product_model.js",
+          "start": 5,
+          "end": 78,
+          "startLoc": {
+            "line": 5,
+            "column": 97,
+            "position": 29
+          },
+          "endLoc": {
+            "line": 78,
+            "column": 13,
+            "position": 416
+          }
+        },
+        "secondFile": {
+          "name": "core/data-model/production_model.js",
+          "start": 5,
+          "end": 78,
+          "startLoc": {
+            "line": 5,
+            "column": 76,
+            "position": 29
+          },
+          "endLoc": {
+            "line": 78,
+            "column": 12,
+            "position": 416
+          }
+        }
+      },
+      {
+        "format": "javascript",
+        "lines": 123,
+        "fragment": ",\n  \"isEditable\": false,\n  \"attributes\": [\n    {\n      \"id\": \"id\",\n      \"type\": \"string\",\n      \"label\": \"ID\",\n      \"required\": true,\n      \"unique\": true,\n      \"indexed\": true\n    },\n    {\n      \"id\": \"description\",\n      \"type\": \"string\",\n      \"label\": \"Description\",\n      \"defaultValue\": \"\"\n    },\n    {\n      \"id\": \"startDate\",\n      \"type\": \"date\",\n      \"label\": \"Start Date\",\n      \"required\": true\n    },\n    {\n      \"id\": \"endDate\",\n      \"type\": \"date\",\n      \"label\": \"End Date\"\n    },\n    {\n      \"id\": \"createdBy\",\n      \"type\": \"string\",\n      \"label\": \"Created By\",\n      \"accessControl\": {\n        \"read\": [\n          \"admin\"\n        ],\n        \"write\": [\n          \"admin\"\n        ]\n      }\n    },\n    {\n      \"id\": \"createdAt\",\n      \"type\": \"datetime\",\n      \"label\": \"Created At\"\n    },\n    {\n      \"id\": \"status\",\n      \"type\": \"string\",\n      \"label\": \"Status\",\n      \"defaultValue\": \"draft\",\n      \"allowedValues\": [\n        \"draft\",\n        \"active\",\n        \"inactive\",\n        \"archived\"\n      ]\n    },\n    {\n      \"id\": \"version\",\n      \"type\": \"number\",\n      \"label\": \"Version\",\n      \"defaultValue\": 1\n    },\n    {\n      \"id\": \"createdAge\",\n      \"type\": \"computed\",\n      \"label\": \"Age (days)\",\n      \"dependencies\": [\n        \"createdAt\"\n      ]\n    },\n    {\n      \"id\": \"firstName\",\n      \"type\": \"string\",\n      \"label\": \"First Name\",\n      \"required\": true\n    },\n    {\n      \"id\": \"lastName\",\n      \"type\": \"string\",\n      \"label\": \"Last Name\",\n      \"required\": true\n    },\n    {\n      \"id\": \"dateOfBirth\",\n      \"type\": \"date\",\n      \"label\": \"Date of Birth\",\n      \"required\": true\n    },\n    {\n      \"id\": \"bsn\",\n      \"type\": \"string\",\n      \"label\": \"BSN\",\n      \"unique\": true\n    },\n    {\n      \"id\": \"countryCode\",\n      \"type\": \"string\",\n      \"label\": \"Country Code\",\n      \"defaultValue\": \"+31\"\n    },\n    {\n      \"id\": \"phoneNumber\",\n      \"type\": \"string\",\n      \"label\": \"Phone Number\"\n    },\n    {\n      \"id\": \"address\",\n      \"type\": \"reference\",\n      \"label\": \"Address\",\n      \"entityType\": \"address\"\n    },\n    {\n      \"id\": \"fullName\",\n      \"type\": \"computed\",\n      \"label\": \"Full Name\",\n      \"dependencies\": [\n        \"firstName\",\n        \"lastName\"\n      ]\n    }\n  ]",
+        "tokens": 0,
+        "firstFile": {
+          "name": "core/data-model/person.js",
+          "start": 5,
+          "end": 127,
+          "startLoc": {
+            "line": 5,
+            "column": 47,
+            "position": 29
+          },
+          "endLoc": {
+            "line": 127,
+            "column": 2,
+            "position": 684
+          }
+        },
+        "secondFile": {
+          "name": "core/data-model/user.js",
+          "start": 5,
+          "end": 126,
+          "startLoc": {
+            "line": 5,
+            "column": 27,
+            "position": 29
+          },
+          "endLoc": {
+            "line": 126,
+            "column": 2,
+            "position": 682
+          }
+        }
+      },
+      {
+        "format": "javascript",
+        "lines": 74,
+        "fragment": ",\n  \"isEditable\": true,\n  \"attributes\": [\n    {\n      \"id\": \"id\",\n      \"type\": \"string\",\n      \"label\": \"ID\",\n      \"required\": true,\n      \"unique\": true,\n      \"indexed\": true\n    },\n    {\n      \"id\": \"description\",\n      \"type\": \"string\",\n      \"label\": \"Description\",\n      \"defaultValue\": \"\"\n    },\n    {\n      \"id\": \"startDate\",\n      \"type\": \"date\",\n      \"label\": \"Start Date\",\n      \"required\": true\n    },\n    {\n      \"id\": \"endDate\",\n      \"type\": \"date\",\n      \"label\": \"End Date\"\n    },\n    {\n      \"id\": \"createdBy\",\n      \"type\": \"string\",\n      \"label\": \"Created By\",\n      \"accessControl\": {\n        \"read\": [\n          \"admin\"\n        ],\n        \"write\": [\n          \"admin\"\n        ]\n      }\n    },\n    {\n      \"id\": \"createdAt\",\n      \"type\": \"datetime\",\n      \"label\": \"Created At\"\n    },\n    {\n      \"id\": \"status\",\n      \"type\": \"string\",\n      \"label\": \"Status\",\n      \"defaultValue\": \"draft\",\n      \"allowedValues\": [\n        \"draft\",\n        \"active\",\n        \"inactive\",\n        \"archived\"\n      ]\n    },\n    {\n      \"id\": \"version\",\n      \"type\": \"number\",\n      \"label\": \"Version\",\n      \"defaultValue\": 1\n    },\n    {\n      \"id\": \"createdAge\",\n      \"type\": \"computed\",\n      \"label\": \"Age (days)\",\n      \"dependencies\": [\n        \"createdAt\"\n      ]\n    },\n    {\n      \"id\": \"order_id\"",
+        "tokens": 0,
+        "firstFile": {
+          "name": "core/data-model/order_model.js",
+          "start": 5,
+          "end": 78,
+          "startLoc": {
+            "line": 5,
+            "column": 66,
+            "position": 29
+          },
+          "endLoc": {
+            "line": 78,
+            "column": 11,
+            "position": 416
+          }
+        },
+        "secondFile": {
+          "name": "core/data-model/production_model.js",
+          "start": 5,
+          "end": 78,
+          "startLoc": {
+            "line": 5,
+            "column": 76,
+            "position": 29
+          },
+          "endLoc": {
+            "line": 78,
+            "column": 12,
+            "position": 416
+          }
+        }
+      },
+      {
+        "format": "javascript",
+        "lines": 124,
+        "fragment": ",\n  \"isEditable\": false,\n  \"attributes\": [\n    {\n      \"id\": \"id\",\n      \"type\": \"string\",\n      \"label\": \"ID\",\n      \"required\": true,\n      \"unique\": true,\n      \"indexed\": true\n    },\n    {\n      \"id\": \"description\",\n      \"type\": \"string\",\n      \"label\": \"Description\",\n      \"defaultValue\": \"\"\n    },\n    {\n      \"id\": \"startDate\",\n      \"type\": \"date\",\n      \"label\": \"Start Date\",\n      \"required\": true\n    },\n    {\n      \"id\": \"endDate\",\n      \"type\": \"date\",\n      \"label\": \"End Date\"\n    },\n    {\n      \"id\": \"createdBy\",\n      \"type\": \"string\",\n      \"label\": \"Created By\",\n      \"accessControl\": {\n        \"read\": [\n          \"admin\"\n        ],\n        \"write\": [\n          \"admin\"\n        ]\n      }\n    },\n    {\n      \"id\": \"createdAt\",\n      \"type\": \"datetime\",\n      \"label\": \"Created At\"\n    },\n    {\n      \"id\": \"status\",\n      \"type\": \"string\",\n      \"label\": \"Status\",\n      \"defaultValue\": \"draft\",\n      \"allowedValues\": [\n        \"draft\",\n        \"active\",\n        \"inactive\",\n        \"archived\"\n      ]\n    },\n    {\n      \"id\": \"version\",\n      \"type\": \"number\",\n      \"label\": \"Version\",\n      \"defaultValue\": 1\n    },\n    {\n      \"id\": \"createdAge\",\n      \"type\": \"computed\",\n      \"label\": \"Age (days)\",\n      \"dependencies\": [\n        \"createdAt\"\n      ]\n    },\n    {\n      \"id\": \"firstName\",\n      \"type\": \"string\",\n      \"label\": \"First Name\",\n      \"required\": true\n    },\n    {\n      \"id\": \"lastName\",\n      \"type\": \"string\",\n      \"label\": \"Last Name\",\n      \"required\": true\n    },\n    {\n      \"id\": \"dateOfBirth\",\n      \"type\": \"date\",\n      \"label\": \"Date of Birth\",\n      \"required\": true\n    },\n    {\n      \"id\": \"bsn\",\n      \"type\": \"string\",\n      \"label\": \"BSN\",\n      \"unique\": true\n    },\n    {\n      \"id\": \"countryCode\",\n      \"type\": \"string\",\n      \"label\": \"Country Code\",\n      \"defaultValue\": \"+31\"\n    },\n    {\n      \"id\": \"phoneNumber\",\n      \"type\": \"string\",\n      \"label\": \"Phone Number\"\n    },\n    {\n      \"id\": \"address\",\n      \"type\": \"reference\",\n      \"label\": \"Address\",\n      \"entityType\": \"address\"\n    },\n    {\n      \"id\": \"fullName\",\n      \"type\": \"computed\",\n      \"label\": \"Full Name\",\n      \"dependencies\": [\n        \"firstName\",\n        \"lastName\"\n      ]\n    },\n    {\n      \"id\": \"customerId\"",
+        "tokens": 0,
+        "firstFile": {
+          "name": "core/data-model/customer.js",
+          "start": 5,
+          "end": 128,
+          "startLoc": {
+            "line": 5,
+            "column": 24,
+            "position": 29
+          },
+          "endLoc": {
+            "line": 128,
+            "column": 13,
+            "position": 691
+          }
+        },
+        "secondFile": {
+          "name": "core/data-model/user.js",
+          "start": 5,
+          "end": 128,
+          "startLoc": {
+            "line": 5,
+            "column": 27,
+            "position": 29
+          },
+          "endLoc": {
+            "line": 128,
+            "column": 8,
+            "position": 691
+          }
+        }
+      },
+      {
+        "format": "javascript",
+        "lines": 74,
+        "fragment": ",\n  \"isEditable\": true,\n  \"attributes\": [\n    {\n      \"id\": \"id\",\n      \"type\": \"string\",\n      \"label\": \"ID\",\n      \"required\": true,\n      \"unique\": true,\n      \"indexed\": true\n    },\n    {\n      \"id\": \"description\",\n      \"type\": \"string\",\n      \"label\": \"Description\",\n      \"defaultValue\": \"\"\n    },\n    {\n      \"id\": \"startDate\",\n      \"type\": \"date\",\n      \"label\": \"Start Date\",\n      \"required\": true\n    },\n    {\n      \"id\": \"endDate\",\n      \"type\": \"date\",\n      \"label\": \"End Date\"\n    },\n    {\n      \"id\": \"createdBy\",\n      \"type\": \"string\",\n      \"label\": \"Created By\",\n      \"accessControl\": {\n        \"read\": [\n          \"admin\"\n        ],\n        \"write\": [\n          \"admin\"\n        ]\n      }\n    },\n    {\n      \"id\": \"createdAt\",\n      \"type\": \"datetime\",\n      \"label\": \"Created At\"\n    },\n    {\n      \"id\": \"status\",\n      \"type\": \"string\",\n      \"label\": \"Status\",\n      \"defaultValue\": \"draft\",\n      \"allowedValues\": [\n        \"draft\",\n        \"active\",\n        \"inactive\",\n        \"archived\"\n      ]\n    },\n    {\n      \"id\": \"version\",\n      \"type\": \"number\",\n      \"label\": \"Version\",\n      \"defaultValue\": 1\n    },\n    {\n      \"id\": \"createdAge\",\n      \"type\": \"computed\",\n      \"label\": \"Age (days)\",\n      \"dependencies\": [\n        \"createdAt\"\n      ]\n    },\n    {\n      \"id\": \"client_id\"",
+        "tokens": 0,
+        "firstFile": {
+          "name": "core/data-model/client_model.js",
+          "start": 5,
+          "end": 78,
+          "startLoc": {
+            "line": 5,
+            "column": 96,
+            "position": 29
+          },
+          "endLoc": {
+            "line": 78,
+            "column": 12,
+            "position": 416
+          }
+        },
+        "secondFile": {
+          "name": "core/data-model/production_model.js",
+          "start": 5,
+          "end": 78,
+          "startLoc": {
+            "line": 5,
+            "column": 76,
+            "position": 29
+          },
+          "endLoc": {
+            "line": 78,
+            "column": 12,
+            "position": 416
+          }
+        }
+      },
+      {
+        "format": "javascript",
+        "lines": 73,
+        "fragment": ",\n  \"isEditable\": false,\n  \"attributes\": [\n    {\n      \"id\": \"id\",\n      \"type\": \"string\",\n      \"label\": \"ID\",\n      \"required\": true,\n      \"unique\": true,\n      \"indexed\": true\n    },\n    {\n      \"id\": \"description\",\n      \"type\": \"string\",\n      \"label\": \"Description\",\n      \"defaultValue\": \"\"\n    },\n    {\n      \"id\": \"startDate\",\n      \"type\": \"date\",\n      \"label\": \"Start Date\",\n      \"required\": true\n    },\n    {\n      \"id\": \"endDate\",\n      \"type\": \"date\",\n      \"label\": \"End Date\"\n    },\n    {\n      \"id\": \"createdBy\",\n      \"type\": \"string\",\n      \"label\": \"Created By\",\n      \"accessControl\": {\n        \"read\": [\n          \"admin\"\n        ],\n        \"write\": [\n          \"admin\"\n        ]\n      }\n    },\n    {\n      \"id\": \"createdAt\",\n      \"type\": \"datetime\",\n      \"label\": \"Created At\"\n    },\n    {\n      \"id\": \"status\",\n      \"type\": \"string\",\n      \"label\": \"Status\",\n      \"defaultValue\": \"draft\",\n      \"allowedValues\": [\n        \"draft\",\n        \"active\",\n        \"inactive\",\n        \"archived\"\n      ]\n    },\n    {\n      \"id\": \"version\",\n      \"type\": \"number\",\n      \"label\": \"Version\",\n      \"defaultValue\": 1\n    },\n    {\n      \"id\": \"createdAge\",\n      \"type\": \"computed\",\n      \"label\": \"Age (days)\",\n      \"dependencies\": [\n        \"createdAt\"\n      ]\n    }\n  ]",
+        "tokens": 0,
+        "firstFile": {
+          "name": "core/data-model/blaze-entity.js",
+          "start": 5,
+          "end": 77,
+          "startLoc": {
+            "line": 5,
+            "column": 53,
+            "position": 29
+          },
+          "endLoc": {
+            "line": 77,
+            "column": 2,
+            "position": 409
+          }
+        },
+        "secondFile": {
+          "name": "core/data-model/user.js",
+          "start": 5,
+          "end": 76,
+          "startLoc": {
+            "line": 5,
+            "column": 27,
+            "position": 29
+          },
+          "endLoc": {
+            "line": 76,
+            "column": 2,
+            "position": 407
+          }
+        }
+      },
+      {
+        "format": "javascript",
+        "lines": 74,
+        "fragment": ",\n  \"isEditable\": false,\n  \"attributes\": [\n    {\n      \"id\": \"id\",\n      \"type\": \"string\",\n      \"label\": \"ID\",\n      \"required\": true,\n      \"unique\": true,\n      \"indexed\": true\n    },\n    {\n      \"id\": \"description\",\n      \"type\": \"string\",\n      \"label\": \"Description\",\n      \"defaultValue\": \"\"\n    },\n    {\n      \"id\": \"startDate\",\n      \"type\": \"date\",\n      \"label\": \"Start Date\",\n      \"required\": true\n    },\n    {\n      \"id\": \"endDate\",\n      \"type\": \"date\",\n      \"label\": \"End Date\"\n    },\n    {\n      \"id\": \"createdBy\",\n      \"type\": \"string\",\n      \"label\": \"Created By\",\n      \"accessControl\": {\n        \"read\": [\n          \"admin\"\n        ],\n        \"write\": [\n          \"admin\"\n        ]\n      }\n    },\n    {\n      \"id\": \"createdAt\",\n      \"type\": \"datetime\",\n      \"label\": \"Created At\"\n    },\n    {\n      \"id\": \"status\",\n      \"type\": \"string\",\n      \"label\": \"Status\",\n      \"defaultValue\": \"draft\",\n      \"allowedValues\": [\n        \"draft\",\n        \"active\",\n        \"inactive\",\n        \"archived\"\n      ]\n    },\n    {\n      \"id\": \"version\",\n      \"type\": \"number\",\n      \"label\": \"Version\",\n      \"defaultValue\": 1\n    },\n    {\n      \"id\": \"createdAge\",\n      \"type\": \"computed\",\n      \"label\": \"Age (days)\",\n      \"dependencies\": [\n        \"createdAt\"\n      ]\n    },\n    {\n      \"id\": \"street\"",
+        "tokens": 0,
+        "firstFile": {
+          "name": "core/data-model/address.js",
+          "start": 5,
+          "end": 78,
+          "startLoc": {
+            "line": 5,
+            "column": 50,
+            "position": 29
+          },
+          "endLoc": {
+            "line": 78,
+            "column": 9,
+            "position": 416
+          }
+        },
+        "secondFile": {
+          "name": "core/data-model/user.js",
+          "start": 5,
+          "end": 78,
+          "startLoc": {
+            "line": 5,
+            "column": 27,
+            "position": 29
+          },
+          "endLoc": {
+            "line": 78,
+            "column": 12,
+            "position": 416
+          }
+        }
+      },
+      {
+        "format": "javascript",
+        "lines": 26,
+        "fragment": "extends DynamicHtmlElement {\n   constructor() {\n    super();\n  }\n\n\n  connectedCallback() {\n    this.render();\n    super.connectedCallback();\n  }\n\n  render() {\n    this.shadowRoot.innerHTML = `\n      \n        \u003Cblaze-field-group id=\"fg-data\" context=\"data\"\u003E\u003C/blaze-field-group\u003E\n      \n    `;\n\n    \n      const fgdata = this.shadowRoot.getElementById(\"fg-data\");\n      fgdata.context = \"data\";\n      fgdata.model = {};\n      \n    \n          // 1️⃣ Render fields immediately with default labels\n    fgdata.fields = [{\"id\":\"product_id\"",
+        "tokens": 0,
+        "firstFile": {
+          "name": "client/src/component/wholesale-order-sampling-approval-sample-approval.js",
+          "start": 5,
+          "end": 30,
+          "startLoc": {
+            "line": 5,
+            "column": 2,
+            "position": 22
+          },
+          "endLoc": {
+            "line": 30,
+            "column": 13,
+            "position": 151
+          }
+        },
+        "secondFile": {
+          "name": "client/src/component/wholesale-order-shipping-invoice-shipping-billing-close.js",
+          "start": 5,
+          "end": 30,
+          "startLoc": {
+            "line": 5,
+            "column": 2,
+            "position": 22
+          },
+          "endLoc": {
+            "line": 30,
+            "column": 16,
+            "position": 151
+          }
+        }
+      },
+      {
+        "format": "javascript",
+        "lines": 21,
+        "fragment": "}];\n\n    // 2️⃣ Apply translations later (if available)\n    this.updateFieldLabels();\n      \n      fgdata.data = { \"data\": this._formData.data || {} };\n   \n\n  }\n\n  populateForm() {\n    \n    const fgdata = this.shadowRoot?.getElementById(\"fg-data\");\n    if (fgdata) {\n      fgdata.data = { \"data\": this._formData[\"data\"] || {} };\n    }\n  \n  }\n}\n\ncustomElements.define(\"wholesale-order-sampling-approval-sample-approval\"",
+        "tokens": 0,
+        "firstFile": {
+          "name": "client/src/component/wholesale-order-sampling-approval-sample-approval.js",
+          "start": 30,
+          "end": 50,
+          "startLoc": {
+            "line": 30,
+            "column": 17,
+            "position": 276
+          },
+          "endLoc": {
+            "line": 50,
+            "column": 52,
+            "position": 405
+          }
+        },
+        "secondFile": {
+          "name": "client/src/component/wholesale-order-shipping-invoice-shipping-billing-close.js",
+          "start": 30,
+          "end": 50,
+          "startLoc": {
+            "line": 30,
+            "column": 15,
+            "position": 250
+          },
+          "endLoc": {
+            "line": 50,
+            "column": 58,
+            "position": 379
+          }
+        }
+      },
+      {
+        "format": "javascript",
+        "lines": 26,
+        "fragment": "extends DynamicHtmlElement {\n   constructor() {\n    super();\n  }\n\n\n  connectedCallback() {\n    this.render();\n    super.connectedCallback();\n  }\n\n  render() {\n    this.shadowRoot.innerHTML = `\n      \n        \u003Cblaze-field-group id=\"fg-data\" context=\"data\"\u003E\u003C/blaze-field-group\u003E\n      \n    `;\n\n    \n      const fgdata = this.shadowRoot.getElementById(\"fg-data\");\n      fgdata.context = \"data\";\n      fgdata.model = {};\n      \n    \n          // 1️⃣ Render fields immediately with default labels\n    fgdata.fields = [{\"id\":\"quality_checks\"",
+        "tokens": 0,
+        "firstFile": {
+          "name": "client/src/component/wholesale-order-quality-check-quality-control-sign-off.js",
+          "start": 5,
+          "end": 30,
+          "startLoc": {
+            "line": 5,
+            "column": 2,
+            "position": 22
+          },
+          "endLoc": {
+            "line": 30,
+            "column": 17,
+            "position": 151
+          }
+        },
+        "secondFile": {
+          "name": "client/src/component/wholesale-order-shipping-invoice-shipping-billing-close.js",
+          "start": 5,
+          "end": 30,
+          "startLoc": {
+            "line": 5,
+            "column": 2,
+            "position": 22
+          },
+          "endLoc": {
+            "line": 30,
+            "column": 16,
+            "position": 151
+          }
+        }
+      },
+      {
+        "format": "javascript",
+        "lines": 21,
+        "fragment": "},{\"id\":\"status\",\"name\":\"Order Status\",\"type\":\"text\",\"required\":false,\"description\":\"Current status (e.g., Draft, Confirmed, In Production, Shipped, Delivered).\",\"label\":\"Order Status\"}];\n\n    // 2️⃣ Apply translations later (if available)\n    this.updateFieldLabels();\n      \n      fgdata.data = { \"data\": this._formData.data || {} };\n   \n\n  }\n\n  populateForm() {\n    \n    const fgdata = this.shadowRoot?.getElementById(\"fg-data\");\n    if (fgdata) {\n      fgdata.data = { \"data\": this._formData[\"data\"] || {} };\n    }\n  \n  }\n}\n\ncustomElements.define(\"wholesale-order-quality-check-quality-control-sign-off\"",
+        "tokens": 0,
+        "firstFile": {
+          "name": "client/src/component/wholesale-order-quality-check-quality-control-sign-off.js",
+          "start": 30,
+          "end": 50,
+          "startLoc": {
+            "line": 30,
+            "column": 18,
+            "position": 198
+          },
+          "endLoc": {
+            "line": 50,
+            "column": 57,
+            "position": 353
+          }
+        },
+        "secondFile": {
+          "name": "client/src/component/wholesale-order-shipping-invoice-shipping-billing-close.js",
+          "start": 30,
+          "end": 50,
+          "startLoc": {
+            "line": 30,
+            "column": 11,
+            "position": 224
+          },
+          "endLoc": {
+            "line": 50,
+            "column": 58,
+            "position": 379
+          }
+        }
+      },
+      {
+        "format": "javascript",
+        "lines": 26,
+        "fragment": "extends DynamicHtmlElement {\n   constructor() {\n    super();\n  }\n\n\n  connectedCallback() {\n    this.render();\n    super.connectedCallback();\n  }\n\n  render() {\n    this.shadowRoot.innerHTML = `\n      \n        \u003Cblaze-field-group id=\"fg-data\" context=\"data\"\u003E\u003C/blaze-field-group\u003E\n      \n    `;\n\n    \n      const fgdata = this.shadowRoot.getElementById(\"fg-data\");\n      fgdata.context = \"data\";\n      fgdata.model = {};\n      \n    \n          // 1️⃣ Render fields immediately with default labels\n    fgdata.fields = [{\"id\":\"order_id\"",
+        "tokens": 0,
+        "firstFile": {
+          "name": "client/src/component/wholesale-order-order-received-order-receipt-validation.js",
+          "start": 5,
+          "end": 30,
+          "startLoc": {
+            "line": 5,
+            "column": 2,
+            "position": 22
+          },
+          "endLoc": {
+            "line": 30,
+            "column": 11,
+            "position": 151
+          }
+        },
+        "secondFile": {
+          "name": "client/src/component/wholesale-order-shipping-invoice-shipping-billing-close.js",
+          "start": 5,
+          "end": 30,
+          "startLoc": {
+            "line": 5,
+            "column": 2,
+            "position": 22
+          },
+          "endLoc": {
+            "line": 30,
+            "column": 16,
+            "position": 151
+          }
+        }
+      },
+      {
+        "format": "javascript",
+        "lines": 21,
+        "fragment": "},{\"id\":\"status\",\"name\":\"Order Status\",\"type\":\"text\",\"required\":false,\"description\":\"Current status (e.g., Draft, Confirmed, In Production, Shipped, Delivered).\",\"label\":\"Order Status\"}];\n\n    // 2️⃣ Apply translations later (if available)\n    this.updateFieldLabels();\n      \n      fgdata.data = { \"data\": this._formData.data || {} };\n   \n\n  }\n\n  populateForm() {\n    \n    const fgdata = this.shadowRoot?.getElementById(\"fg-data\");\n    if (fgdata) {\n      fgdata.data = { \"data\": this._formData[\"data\"] || {} };\n    }\n  \n  }\n}\n\ncustomElements.define(\"wholesale-order-order-received-order-receipt-validation\"",
+        "tokens": 0,
+        "firstFile": {
+          "name": "client/src/component/wholesale-order-order-received-order-receipt-validation.js",
+          "start": 30,
+          "end": 50,
+          "startLoc": {
+            "line": 30,
+            "column": 13,
+            "position": 276
+          },
+          "endLoc": {
+            "line": 50,
+            "column": 58,
+            "position": 431
+          }
+        },
+        "secondFile": {
+          "name": "client/src/component/wholesale-order-shipping-invoice-shipping-billing-close.js",
+          "start": 30,
+          "end": 50,
+          "startLoc": {
+            "line": 30,
+            "column": 11,
+            "position": 224
+          },
+          "endLoc": {
+            "line": 50,
+            "column": 58,
+            "position": 379
+          }
+        }
+      },
+      {
+        "format": "javascript",
+        "lines": 26,
+        "fragment": "extends DynamicHtmlElement {\n   constructor() {\n    super();\n  }\n\n\n  connectedCallback() {\n    this.render();\n    super.connectedCallback();\n  }\n\n  render() {\n    this.shadowRoot.innerHTML = `\n      \n        \u003Cblaze-field-group id=\"fg-data\" context=\"data\"\u003E\u003C/blaze-field-group\u003E\n      \n    `;\n\n    \n      const fgdata = this.shadowRoot.getElementById(\"fg-data\");\n      fgdata.context = \"data\";\n      fgdata.model = {};\n      \n    \n          // 1️⃣ Render fields immediately with default labels\n    fgdata.fields = [{\"id\":\"factory\"",
+        "tokens": 0,
+        "firstFile": {
+          "name": "client/src/component/wholesale-order-manufacturing-manufacturing-run.js",
+          "start": 5,
+          "end": 30,
+          "startLoc": {
+            "line": 5,
+            "column": 2,
+            "position": 22
+          },
+          "endLoc": {
+            "line": 30,
+            "column": 10,
+            "position": 151
+          }
+        },
+        "secondFile": {
+          "name": "client/src/component/wholesale-order-shipping-invoice-shipping-billing-close.js",
+          "start": 5,
+          "end": 30,
+          "startLoc": {
+            "line": 5,
+            "column": 2,
+            "position": 22
+          },
+          "endLoc": {
+            "line": 30,
+            "column": 16,
+            "position": 151
+          }
+        }
+      },
+      {
+        "format": "javascript",
+        "lines": 21,
+        "fragment": "}];\n\n    // 2️⃣ Apply translations later (if available)\n    this.updateFieldLabels();\n      \n      fgdata.data = { \"data\": this._formData.data || {} };\n   \n\n  }\n\n  populateForm() {\n    \n    const fgdata = this.shadowRoot?.getElementById(\"fg-data\");\n    if (fgdata) {\n      fgdata.data = { \"data\": this._formData[\"data\"] || {} };\n    }\n  \n  }\n}\n\ncustomElements.define(\"wholesale-order-manufacturing-manufacturing-run\"",
+        "tokens": 0,
+        "firstFile": {
+          "name": "client/src/component/wholesale-order-manufacturing-manufacturing-run.js",
+          "start": 30,
+          "end": 50,
+          "startLoc": {
+            "line": 30,
+            "column": 16,
+            "position": 250
+          },
+          "endLoc": {
+            "line": 50,
+            "column": 50,
+            "position": 379
+          }
+        },
+        "secondFile": {
+          "name": "client/src/component/wholesale-order-shipping-invoice-shipping-billing-close.js",
+          "start": 30,
+          "end": 50,
+          "startLoc": {
+            "line": 30,
+            "column": 15,
+            "position": 250
+          },
+          "endLoc": {
+            "line": 50,
+            "column": 58,
+            "position": 379
+          }
+        }
+      },
+      {
+        "format": "javascript",
+        "lines": 26,
+        "fragment": "extends DynamicHtmlElement {\n   constructor() {\n    super();\n  }\n\n\n  connectedCallback() {\n    this.render();\n    super.connectedCallback();\n  }\n\n  render() {\n    this.shadowRoot.innerHTML = `\n      \n        \u003Cblaze-field-group id=\"fg-data\" context=\"data\"\u003E\u003C/blaze-field-group\u003E\n      \n    `;\n\n    \n      const fgdata = this.shadowRoot.getElementById(\"fg-data\");\n      fgdata.context = \"data\";\n      fgdata.model = {};\n      \n    \n          // 1️⃣ Render fields immediately with default labels\n    fgdata.fields = [{\"id\":\"order_id\",\"name\":\"Order ID\",\"type\":\"text\",\"required\":false,\"description\":\"Unique order or PO number.\",\"label\":\"Order ID\"},{\"id\":\"client_id\"",
+        "tokens": 0,
+        "firstFile": {
+          "name": "client/src/component/retail-customer-order-purchase-order-capture.js",
+          "start": 5,
+          "end": 30,
+          "startLoc": {
+            "line": 5,
+            "column": 2,
+            "position": 22
+          },
+          "endLoc": {
+            "line": 30,
+            "column": 12,
+            "position": 177
+          }
+        },
+        "secondFile": {
+          "name": "client/src/component/wholesale-order-shipping-invoice-shipping-billing-close.js",
+          "start": 5,
+          "end": 30,
+          "startLoc": {
+            "line": 5,
+            "column": 2,
+            "position": 22
+          },
+          "endLoc": {
+            "line": 30,
+            "column": 13,
+            "position": 177
+          }
+        }
+      },
+      {
+        "format": "javascript",
+        "lines": 21,
+        "fragment": "}];\n\n    // 2️⃣ Apply translations later (if available)\n    this.updateFieldLabels();\n      \n      fgdata.data = { \"data\": this._formData.data || {} };\n   \n\n  }\n\n  populateForm() {\n    \n    const fgdata = this.shadowRoot?.getElementById(\"fg-data\");\n    if (fgdata) {\n      fgdata.data = { \"data\": this._formData[\"data\"] || {} };\n    }\n  \n  }\n}\n\ncustomElements.define(\"retail-customer-order-purchase-order-capture\"",
+        "tokens": 0,
+        "firstFile": {
+          "name": "client/src/component/retail-customer-order-purchase-order-capture.js",
+          "start": 30,
+          "end": 50,
+          "startLoc": {
+            "line": 30,
+            "column": 13,
+            "position": 302
+          },
+          "endLoc": {
+            "line": 50,
+            "column": 47,
+            "position": 431
+          }
+        },
+        "secondFile": {
+          "name": "client/src/component/wholesale-order-shipping-invoice-shipping-billing-close.js",
+          "start": 30,
+          "end": 50,
+          "startLoc": {
+            "line": 30,
+            "column": 15,
+            "position": 250
+          },
+          "endLoc": {
+            "line": 50,
+            "column": 58,
+            "position": 379
+          }
+        }
+      },
+      {
+        "format": "javascript",
+        "lines": 26,
+        "fragment": "extends DynamicHtmlElement {\n   constructor() {\n    super();\n  }\n\n\n  connectedCallback() {\n    this.render();\n    super.connectedCallback();\n  }\n\n  render() {\n    this.shadowRoot.innerHTML = `\n      \n        \u003Cblaze-field-group id=\"fg-data\" context=\"data\"\u003E\u003C/blaze-field-group\u003E\n      \n    `;\n\n    \n      const fgdata = this.shadowRoot.getElementById(\"fg-data\");\n      fgdata.context = \"data\";\n      fgdata.model = {};\n      \n    \n          // 1️⃣ Render fields immediately with default labels\n    fgdata.fields = [{\"id\":\"production_id\"",
+        "tokens": 0,
+        "firstFile": {
+          "name": "client/src/component/retail-customer-order-fulfillment-pick-pack-prepare.js",
+          "start": 5,
+          "end": 30,
+          "startLoc": {
+            "line": 5,
+            "column": 2,
+            "position": 22
+          },
+          "endLoc": {
+            "line": 30,
+            "column": 16,
+            "position": 151
+          }
+        },
+        "secondFile": {
+          "name": "client/src/component/wholesale-order-shipping-invoice-shipping-billing-close.js",
+          "start": 5,
+          "end": 30,
+          "startLoc": {
+            "line": 5,
+            "column": 2,
+            "position": 22
+          },
+          "endLoc": {
+            "line": 30,
+            "column": 16,
+            "position": 151
+          }
+        }
+      },
+      {
+        "format": "javascript",
+        "lines": 21,
+        "fragment": "}];\n\n    // 2️⃣ Apply translations later (if available)\n    this.updateFieldLabels();\n      \n      fgdata.data = { \"data\": this._formData.data || {} };\n   \n\n  }\n\n  populateForm() {\n    \n    const fgdata = this.shadowRoot?.getElementById(\"fg-data\");\n    if (fgdata) {\n      fgdata.data = { \"data\": this._formData[\"data\"] || {} };\n    }\n  \n  }\n}\n\ncustomElements.define(\"retail-customer-order-fulfillment-pick-pack-prepare\"",
+        "tokens": 0,
+        "firstFile": {
+          "name": "client/src/component/retail-customer-order-fulfillment-pick-pack-prepare.js",
+          "start": 30,
+          "end": 50,
+          "startLoc": {
+            "line": 30,
+            "column": 18,
+            "position": 250
+          },
+          "endLoc": {
+            "line": 50,
+            "column": 54,
+            "position": 379
+          }
+        },
+        "secondFile": {
+          "name": "client/src/component/wholesale-order-shipping-invoice-shipping-billing-close.js",
+          "start": 30,
+          "end": 50,
+          "startLoc": {
+            "line": 30,
+            "column": 15,
+            "position": 250
+          },
+          "endLoc": {
+            "line": 50,
+            "column": 58,
+            "position": 379
+          }
+        }
+      },
+      {
+        "format": "javascript",
+        "lines": 26,
+        "fragment": "extends DynamicHtmlElement {\n   constructor() {\n    super();\n  }\n\n\n  connectedCallback() {\n    this.render();\n    super.connectedCallback();\n  }\n\n  render() {\n    this.shadowRoot.innerHTML = `\n      \n        \u003Cblaze-field-group id=\"fg-data\" context=\"data\"\u003E\u003C/blaze-field-group\u003E\n      \n    `;\n\n    \n      const fgdata = this.shadowRoot.getElementById(\"fg-data\");\n      fgdata.context = \"data\";\n      fgdata.model = {};\n      \n    \n          // 1️⃣ Render fields immediately with default labels\n    fgdata.fields = [{\"id\":\"delivery_date\",\"name\":\"Delivery Date\",\"type\":\"date\",\"required\":false,\"description\":\"Promised or actual delivery date.\",\"label\":\"Delivery Date\"},{\"id\":\"status\"",
+        "tokens": 0,
+        "firstFile": {
+          "name": "client/src/component/retail-customer-order-delivery-dispatch-delivery.js",
+          "start": 5,
+          "end": 30,
+          "startLoc": {
+            "line": 5,
+            "column": 2,
+            "position": 22
+          },
+          "endLoc": {
+            "line": 30,
+            "column": 9,
+            "position": 177
+          }
+        },
+        "secondFile": {
+          "name": "client/src/component/wholesale-order-shipping-invoice-shipping-billing-close.js",
+          "start": 5,
+          "end": 30,
+          "startLoc": {
+            "line": 5,
+            "column": 2,
+            "position": 22
+          },
+          "endLoc": {
+            "line": 30,
+            "column": 14,
+            "position": 177
+          }
+        }
+      },
+      {
+        "format": "javascript",
+        "lines": 21,
+        "fragment": "}];\n\n    // 2️⃣ Apply translations later (if available)\n    this.updateFieldLabels();\n      \n      fgdata.data = { \"data\": this._formData.data || {} };\n   \n\n  }\n\n  populateForm() {\n    \n    const fgdata = this.shadowRoot?.getElementById(\"fg-data\");\n    if (fgdata) {\n      fgdata.data = { \"data\": this._formData[\"data\"] || {} };\n    }\n  \n  }\n}\n\ncustomElements.define(\"retail-customer-order-delivery-dispatch-delivery\"",
+        "tokens": 0,
+        "firstFile": {
+          "name": "client/src/component/retail-customer-order-delivery-dispatch-delivery.js",
+          "start": 30,
+          "end": 50,
+          "startLoc": {
+            "line": 30,
+            "column": 11,
+            "position": 250
+          },
+          "endLoc": {
+            "line": 50,
+            "column": 51,
+            "position": 379
+          }
+        },
+        "secondFile": {
+          "name": "client/src/component/wholesale-order-shipping-invoice-shipping-billing-close.js",
+          "start": 30,
+          "end": 50,
+          "startLoc": {
+            "line": 30,
+            "column": 15,
+            "position": 250
+          },
+          "endLoc": {
+            "line": 50,
+            "column": 58,
+            "position": 379
+          }
+        }
+      },
+      {
+        "format": "javascript",
+        "lines": 26,
+        "fragment": "extends DynamicHtmlElement {\n   constructor() {\n    super();\n  }\n\n\n  connectedCallback() {\n    this.render();\n    super.connectedCallback();\n  }\n\n  render() {\n    this.shadowRoot.innerHTML = `\n      \n        \u003Cblaze-field-group id=\"fg-data\" context=\"data\"\u003E\u003C/blaze-field-group\u003E\n      \n    `;\n\n    \n      const fgdata = this.shadowRoot.getElementById(\"fg-data\");\n      fgdata.context = \"data\";\n      fgdata.model = {};\n      \n    \n          // 1️⃣ Render fields immediately with default labels\n    fgdata.fields = [{\"id\":\"commission_history\"",
+        "tokens": 0,
+        "firstFile": {
+          "name": "client/src/component/retail-customer-order-aftercare-aftercare-alterations.js",
+          "start": 5,
+          "end": 30,
+          "startLoc": {
+            "line": 5,
+            "column": 2,
+            "position": 22
+          },
+          "endLoc": {
+            "line": 30,
+            "column": 21,
+            "position": 151
+          }
+        },
+        "secondFile": {
+          "name": "client/src/component/wholesale-order-shipping-invoice-shipping-billing-close.js",
+          "start": 5,
+          "end": 30,
+          "startLoc": {
+            "line": 5,
+            "column": 2,
+            "position": 22
+          },
+          "endLoc": {
+            "line": 30,
+            "column": 16,
+            "position": 151
+          }
+        }
+      },
+      {
+        "format": "javascript",
+        "lines": 21,
+        "fragment": "}];\n\n    // 2️⃣ Apply translations later (if available)\n    this.updateFieldLabels();\n      \n      fgdata.data = { \"data\": this._formData.data || {} };\n   \n\n  }\n\n  populateForm() {\n    \n    const fgdata = this.shadowRoot?.getElementById(\"fg-data\");\n    if (fgdata) {\n      fgdata.data = { \"data\": this._formData[\"data\"] || {} };\n    }\n  \n  }\n}\n\ncustomElements.define(\"retail-customer-order-aftercare-aftercare-alterations\"",
+        "tokens": 0,
+        "firstFile": {
+          "name": "client/src/component/retail-customer-order-aftercare-aftercare-alterations.js",
+          "start": 30,
+          "end": 50,
+          "startLoc": {
+            "line": 30,
+            "column": 8,
+            "position": 250
+          },
+          "endLoc": {
+            "line": 50,
+            "column": 56,
+            "position": 379
+          }
+        },
+        "secondFile": {
+          "name": "client/src/component/wholesale-order-shipping-invoice-shipping-billing-close.js",
+          "start": 30,
+          "end": 50,
+          "startLoc": {
+            "line": 30,
+            "column": 15,
+            "position": 250
+          },
+          "endLoc": {
+            "line": 50,
+            "column": 58,
+            "position": 379
+          }
+        }
+      },
+      {
+        "format": "javascript",
+        "lines": 26,
+        "fragment": "extends DynamicHtmlElement {\n   constructor() {\n    super();\n  }\n\n\n  connectedCallback() {\n    this.render();\n    super.connectedCallback();\n  }\n\n  render() {\n    this.shadowRoot.innerHTML = `\n      \n        \u003Cblaze-field-group id=\"fg-data\" context=\"data\"\u003E\u003C/blaze-field-group\u003E\n      \n    `;\n\n    \n      const fgdata = this.shadowRoot.getElementById(\"fg-data\");\n      fgdata.context = \"data\";\n      fgdata.model = {};\n      \n    \n          // 1️⃣ Render fields immediately with default labels\n    fgdata.fields = [{\"id\":\"production_id\",\"name\":\"Production ID\",\"type\":\"text\",\"required\":false,\"description\":\"Identifier for a production run or sample batch.\",\"label\":\"Production ID\"},{\"id\":\"lead_time_days\"",
+        "tokens": 0,
+        "firstFile": {
+          "name": "client/src/component/product-development-sampling-sample-creation-review.js",
+          "start": 5,
+          "end": 30,
+          "startLoc": {
+            "line": 5,
+            "column": 2,
+            "position": 22
+          },
+          "endLoc": {
+            "line": 30,
+            "column": 17,
+            "position": 177
+          }
+        },
+        "secondFile": {
+          "name": "client/src/component/wholesale-order-shipping-invoice-shipping-billing-close.js",
+          "start": 5,
+          "end": 30,
+          "startLoc": {
+            "line": 5,
+            "column": 2,
+            "position": 22
+          },
+          "endLoc": {
+            "line": 30,
+            "column": 10,
+            "position": 177
+          }
+        }
+      },
+      {
+        "format": "javascript",
+        "lines": 21,
+        "fragment": "}];\n\n    // 2️⃣ Apply translations later (if available)\n    this.updateFieldLabels();\n      \n      fgdata.data = { \"data\": this._formData.data || {} };\n   \n\n  }\n\n  populateForm() {\n    \n    const fgdata = this.shadowRoot?.getElementById(\"fg-data\");\n    if (fgdata) {\n      fgdata.data = { \"data\": this._formData[\"data\"] || {} };\n    }\n  \n  }\n}\n\ncustomElements.define(\"product-development-sampling-sample-creation-review\"",
+        "tokens": 0,
+        "firstFile": {
+          "name": "client/src/component/product-development-sampling-sample-creation-review.js",
+          "start": 30,
+          "end": 50,
+          "startLoc": {
+            "line": 30,
+            "column": 18,
+            "position": 250
+          },
+          "endLoc": {
+            "line": 50,
+            "column": 54,
+            "position": 379
+          }
+        },
+        "secondFile": {
+          "name": "client/src/component/wholesale-order-shipping-invoice-shipping-billing-close.js",
+          "start": 30,
+          "end": 50,
+          "startLoc": {
+            "line": 30,
+            "column": 15,
+            "position": 250
+          },
+          "endLoc": {
+            "line": 50,
+            "column": 58,
+            "position": 379
+          }
+        }
+      },
+      {
+        "format": "javascript",
+        "lines": 26,
+        "fragment": "extends DynamicHtmlElement {\n   constructor() {\n    super();\n  }\n\n\n  connectedCallback() {\n    this.render();\n    super.connectedCallback();\n  }\n\n  render() {\n    this.shadowRoot.innerHTML = `\n      \n        \u003Cblaze-field-group id=\"fg-data\" context=\"data\"\u003E\u003C/blaze-field-group\u003E\n      \n    `;\n\n    \n      const fgdata = this.shadowRoot.getElementById(\"fg-data\");\n      fgdata.context = \"data\";\n      fgdata.model = {};\n      \n    \n          // 1️⃣ Render fields immediately with default labels\n    fgdata.fields = [{\"id\":\"factory\",\"name\":\"Factory / Atelier\",\"type\":\"text\",\"required\":false,\"description\":\"Name and location of the production partner or in-house atelier.\",\"label\":\"Factory / Atelier\"},{\"id\":\"production_cost\"",
+        "tokens": 0,
+        "firstFile": {
+          "name": "client/src/component/product-development-production-handover-production-handover.js",
+          "start": 5,
+          "end": 30,
+          "startLoc": {
+            "line": 5,
+            "column": 2,
+            "position": 22
+          },
+          "endLoc": {
+            "line": 30,
+            "column": 18,
+            "position": 177
+          }
+        },
+        "secondFile": {
+          "name": "client/src/component/wholesale-order-shipping-invoice-shipping-billing-close.js",
+          "start": 5,
+          "end": 30,
+          "startLoc": {
+            "line": 5,
+            "column": 2,
+            "position": 22
+          },
+          "endLoc": {
+            "line": 30,
+            "column": 17,
+            "position": 177
+          }
+        }
+      },
+      {
+        "format": "javascript",
+        "lines": 21,
+        "fragment": "}];\n\n    // 2️⃣ Apply translations later (if available)\n    this.updateFieldLabels();\n      \n      fgdata.data = { \"data\": this._formData.data || {} };\n   \n\n  }\n\n  populateForm() {\n    \n    const fgdata = this.shadowRoot?.getElementById(\"fg-data\");\n    if (fgdata) {\n      fgdata.data = { \"data\": this._formData[\"data\"] || {} };\n    }\n  \n  }\n}\n\ncustomElements.define(\"product-development-production-handover-production-handover\"",
+        "tokens": 0,
+        "firstFile": {
+          "name": "client/src/component/product-development-production-handover-production-handover.js",
+          "start": 30,
+          "end": 50,
+          "startLoc": {
+            "line": 30,
+            "column": 19,
+            "position": 250
+          },
+          "endLoc": {
+            "line": 50,
+            "column": 62,
+            "position": 379
+          }
+        },
+        "secondFile": {
+          "name": "client/src/component/wholesale-order-shipping-invoice-shipping-billing-close.js",
+          "start": 30,
+          "end": 50,
+          "startLoc": {
+            "line": 30,
+            "column": 15,
+            "position": 250
+          },
+          "endLoc": {
+            "line": 50,
+            "column": 58,
+            "position": 379
+          }
+        }
+      },
+      {
+        "format": "javascript",
+        "lines": 26,
+        "fragment": "extends DynamicHtmlElement {\n   constructor() {\n    super();\n  }\n\n\n  connectedCallback() {\n    this.render();\n    super.connectedCallback();\n  }\n\n  render() {\n    this.shadowRoot.innerHTML = `\n      \n        \u003Cblaze-field-group id=\"fg-data\" context=\"data\"\u003E\u003C/blaze-field-group\u003E\n      \n    `;\n\n    \n      const fgdata = this.shadowRoot.getElementById(\"fg-data\");\n      fgdata.context = \"data\";\n      fgdata.model = {};\n      \n    \n          // 1️⃣ Render fields immediately with default labels\n    fgdata.fields = [{\"id\":\"product_id\",\"name\":\"Product ID\",\"type\":\"text\",\"required\":false,\"description\":\"Unique SKU or internal product identifier.\",\"label\":\"Product ID\"},{\"id\":\"launch_date\"",
+        "tokens": 0,
+        "firstFile": {
+          "name": "client/src/component/product-development-launch-launch-commercialization.js",
+          "start": 5,
+          "end": 30,
+          "startLoc": {
+            "line": 5,
+            "column": 2,
+            "position": 22
+          },
+          "endLoc": {
+            "line": 30,
+            "column": 14,
+            "position": 177
+          }
+        },
+        "secondFile": {
+          "name": "client/src/component/wholesale-order-shipping-invoice-shipping-billing-close.js",
+          "start": 5,
+          "end": 30,
+          "startLoc": {
+            "line": 5,
+            "column": 2,
+            "position": 22
+          },
+          "endLoc": {
+            "line": 30,
+            "column": 9,
+            "position": 177
+          }
+        }
+      },
+      {
+        "format": "javascript",
+        "lines": 21,
+        "fragment": "}];\n\n    // 2️⃣ Apply translations later (if available)\n    this.updateFieldLabels();\n      \n      fgdata.data = { \"data\": this._formData.data || {} };\n   \n\n  }\n\n  populateForm() {\n    \n    const fgdata = this.shadowRoot?.getElementById(\"fg-data\");\n    if (fgdata) {\n      fgdata.data = { \"data\": this._formData[\"data\"] || {} };\n    }\n  \n  }\n}\n\ncustomElements.define(\"product-development-launch-launch-commercialization\"",
+        "tokens": 0,
+        "firstFile": {
+          "name": "client/src/component/product-development-launch-launch-commercialization.js",
+          "start": 30,
+          "end": 50,
+          "startLoc": {
+            "line": 30,
+            "column": 15,
+            "position": 224
+          },
+          "endLoc": {
+            "line": 50,
+            "column": 54,
+            "position": 353
+          }
+        },
+        "secondFile": {
+          "name": "client/src/component/wholesale-order-shipping-invoice-shipping-billing-close.js",
+          "start": 30,
+          "end": 50,
+          "startLoc": {
+            "line": 30,
+            "column": 15,
+            "position": 250
+          },
+          "endLoc": {
+            "line": 50,
+            "column": 58,
+            "position": 379
+          }
+        }
+      },
+      {
+        "format": "javascript",
+        "lines": 26,
+        "fragment": "extends DynamicHtmlElement {\n   constructor() {\n    super();\n  }\n\n\n  connectedCallback() {\n    this.render();\n    super.connectedCallback();\n  }\n\n  render() {\n    this.shadowRoot.innerHTML = `\n      \n        \u003Cblaze-field-group id=\"fg-data\" context=\"data\"\u003E\u003C/blaze-field-group\u003E\n      \n    `;\n\n    \n      const fgdata = this.shadowRoot.getElementById(\"fg-data\");\n      fgdata.context = \"data\";\n      fgdata.model = {};\n      \n    \n          // 1️⃣ Render fields immediately with default labels\n    fgdata.fields = [{\"id\":\"fabric\"",
+        "tokens": 0,
+        "firstFile": {
+          "name": "client/src/component/product-development-design-design-specification.js",
+          "start": 5,
+          "end": 30,
+          "startLoc": {
+            "line": 5,
+            "column": 2,
+            "position": 22
+          },
+          "endLoc": {
+            "line": 30,
+            "column": 9,
+            "position": 151
+          }
+        },
+        "secondFile": {
+          "name": "client/src/component/wholesale-order-shipping-invoice-shipping-billing-close.js",
+          "start": 5,
+          "end": 30,
+          "startLoc": {
+            "line": 5,
+            "column": 2,
+            "position": 22
+          },
+          "endLoc": {
+            "line": 30,
+            "column": 16,
+            "position": 151
+          }
+        }
+      },
+      {
+        "format": "javascript",
+        "lines": 21,
+        "fragment": "}];\n\n    // 2️⃣ Apply translations later (if available)\n    this.updateFieldLabels();\n      \n      fgdata.data = { \"data\": this._formData.data || {} };\n   \n\n  }\n\n  populateForm() {\n    \n    const fgdata = this.shadowRoot?.getElementById(\"fg-data\");\n    if (fgdata) {\n      fgdata.data = { \"data\": this._formData[\"data\"] || {} };\n    }\n  \n  }\n}\n\ncustomElements.define(\"product-development-design-design-specification\"",
+        "tokens": 0,
+        "firstFile": {
+          "name": "client/src/component/product-development-design-design-specification.js",
+          "start": 30,
+          "end": 50,
+          "startLoc": {
+            "line": 30,
+            "column": 17,
+            "position": 250
+          },
+          "endLoc": {
+            "line": 50,
+            "column": 50,
+            "position": 379
+          }
+        },
+        "secondFile": {
+          "name": "client/src/component/wholesale-order-shipping-invoice-shipping-billing-close.js",
+          "start": 30,
+          "end": 50,
+          "startLoc": {
+            "line": 30,
+            "column": 15,
+            "position": 250
+          },
+          "endLoc": {
+            "line": 50,
+            "column": 58,
+            "position": 379
+          }
+        }
+      },
+      {
+        "format": "javascript",
+        "lines": 26,
+        "fragment": "extends DynamicHtmlElement {\n   constructor() {\n    super();\n  }\n\n\n  connectedCallback() {\n    this.render();\n    super.connectedCallback();\n  }\n\n  render() {\n    this.shadowRoot.innerHTML = `\n      \n        \u003Cblaze-field-group id=\"fg-data\" context=\"data\"\u003E\u003C/blaze-field-group\u003E\n      \n    `;\n\n    \n      const fgdata = this.shadowRoot.getElementById(\"fg-data\");\n      fgdata.context = \"data\";\n      fgdata.model = {};\n      \n    \n          // 1️⃣ Render fields immediately with default labels\n    fgdata.fields = [{\"id\":\"product_id\",\"name\":\"Product ID\",\"type\":\"text\",\"required\":false,\"description\":\"Unique SKU or internal product identifier.\",\"label\":\"Product ID\"},{\"id\":\"name\"",
+        "tokens": 0,
+        "firstFile": {
+          "name": "client/src/component/product-development-concept-concept-brief.js",
+          "start": 5,
+          "end": 30,
+          "startLoc": {
+            "line": 5,
+            "column": 2,
+            "position": 22
+          },
+          "endLoc": {
+            "line": 30,
+            "column": 7,
+            "position": 177
+          }
+        },
+        "secondFile": {
+          "name": "client/src/component/wholesale-order-shipping-invoice-shipping-billing-close.js",
+          "start": 5,
+          "end": 30,
+          "startLoc": {
+            "line": 5,
+            "column": 2,
+            "position": 22
+          },
+          "endLoc": {
+            "line": 30,
+            "column": 9,
+            "position": 177
+          }
+        }
+      },
+      {
+        "format": "javascript",
+        "lines": 21,
+        "fragment": "}];\n\n    // 2️⃣ Apply translations later (if available)\n    this.updateFieldLabels();\n      \n      fgdata.data = { \"data\": this._formData.data || {} };\n   \n\n  }\n\n  populateForm() {\n    \n    const fgdata = this.shadowRoot?.getElementById(\"fg-data\");\n    if (fgdata) {\n      fgdata.data = { \"data\": this._formData[\"data\"] || {} };\n    }\n  \n  }\n}\n\ncustomElements.define(\"product-development-concept-concept-brief\"",
+        "tokens": 0,
+        "firstFile": {
+          "name": "client/src/component/product-development-concept-concept-brief.js",
+          "start": 30,
+          "end": 50,
+          "startLoc": {
+            "line": 30,
+            "column": 14,
+            "position": 276
+          },
+          "endLoc": {
+            "line": 50,
+            "column": 44,
+            "position": 405
+          }
+        },
+        "secondFile": {
+          "name": "client/src/component/wholesale-order-shipping-invoice-shipping-billing-close.js",
+          "start": 30,
+          "end": 50,
+          "startLoc": {
+            "line": 30,
+            "column": 15,
+            "position": 250
+          },
+          "endLoc": {
+            "line": 50,
+            "column": 58,
+            "position": 379
+          }
+        }
+      },
+      {
+        "format": "javascript",
+        "lines": 26,
+        "fragment": "extends DynamicHtmlElement {\n   constructor() {\n    super();\n  }\n\n\n  connectedCallback() {\n    this.render();\n    super.connectedCallback();\n  }\n\n  render() {\n    this.shadowRoot.innerHTML = `\n      \n        \u003Cblaze-field-group id=\"fg-data\" context=\"data\"\u003E\u003C/blaze-field-group\u003E\n      \n    `;\n\n    \n      const fgdata = this.shadowRoot.getElementById(\"fg-data\");\n      fgdata.context = \"data\";\n      fgdata.model = {};\n      \n    \n          // 1️⃣ Render fields immediately with default labels\n    fgdata.fields = [{\"id\":\"venue\"",
+        "tokens": 0,
+        "firstFile": {
+          "name": "client/src/component/fashion-show-production-runway-execution-event-execution.js",
+          "start": 5,
+          "end": 30,
+          "startLoc": {
+            "line": 5,
+            "column": 2,
+            "position": 22
+          },
+          "endLoc": {
+            "line": 30,
+            "column": 8,
+            "position": 151
+          }
+        },
+        "secondFile": {
+          "name": "client/src/component/wholesale-order-shipping-invoice-shipping-billing-close.js",
+          "start": 5,
+          "end": 30,
+          "startLoc": {
+            "line": 5,
+            "column": 2,
+            "position": 22
+          },
+          "endLoc": {
+            "line": 30,
+            "column": 16,
+            "position": 151
+          }
+        }
+      },
+      {
+        "format": "javascript",
+        "lines": 21,
+        "fragment": "},{\"id\":\"status\",\"name\":\"Order Status\",\"type\":\"text\",\"required\":false,\"description\":\"Current status (e.g., Draft, Confirmed, In Production, Shipped, Delivered).\",\"label\":\"Order Status\"},{\"id\":\"notes\",\"name\":\"Notes\",\"type\":\"text\",\"required\":false,\"description\":\"Additional production notes, vendors and logistics.\",\"label\":\"Notes\"}];\n\n    // 2️⃣ Apply translations later (if available)\n    this.updateFieldLabels();\n      \n      fgdata.data = { \"data\": this._formData.data || {} };\n   \n\n  }\n\n  populateForm() {\n    \n    const fgdata = this.shadowRoot?.getElementById(\"fg-data\");\n    if (fgdata) {\n      fgdata.data = { \"data\": this._formData[\"data\"] || {} };\n    }\n  \n  }\n}\n\ncustomElements.define(\"fashion-show-production-runway-execution-event-execution\"",
+        "tokens": 0,
+        "firstFile": {
+          "name": "client/src/component/fashion-show-production-runway-execution-event-execution.js",
+          "start": 30,
+          "end": 50,
+          "startLoc": {
+            "line": 30,
+            "column": 16,
+            "position": 224
+          },
+          "endLoc": {
+            "line": 50,
+            "column": 59,
+            "position": 405
+          }
+        },
+        "secondFile": {
+          "name": "client/src/component/retail-customer-order-aftercare-aftercare-alterations.js",
+          "start": 30,
+          "end": 50,
+          "startLoc": {
+            "line": 30,
+            "column": 15,
+            "position": 198
+          },
+          "endLoc": {
+            "line": 50,
+            "column": 58,
+            "position": 379
+          }
+        }
+      },
+      {
+        "format": "javascript",
+        "lines": 26,
+        "fragment": "extends DynamicHtmlElement {\n   constructor() {\n    super();\n  }\n\n\n  connectedCallback() {\n    this.render();\n    super.connectedCallback();\n  }\n\n  render() {\n    this.shadowRoot.innerHTML = `\n      \n        \u003Cblaze-field-group id=\"fg-data\" context=\"data\"\u003E\u003C/blaze-field-group\u003E\n      \n    `;\n\n    \n      const fgdata = this.shadowRoot.getElementById(\"fg-data\");\n      fgdata.context = \"data\";\n      fgdata.model = {};\n      \n    \n          // 1️⃣ Render fields immediately with default labels\n    fgdata.fields = [{\"id\":\"product_id\",\"name\":\"Product ID\",\"type\":\"text\",\"required\":false,\"description\":\"Unique SKU or internal product identifier.\",\"label\":\"Product ID\"},{\"id\":\"measurements\"",
+        "tokens": 0,
+        "firstFile": {
+          "name": "client/src/component/fashion-show-production-rehearsal-fittings-fittings-technical-rehearsal.js",
+          "start": 5,
+          "end": 30,
+          "startLoc": {
+            "line": 5,
+            "column": 2,
+            "position": 22
+          },
+          "endLoc": {
+            "line": 30,
+            "column": 15,
+            "position": 177
+          }
+        },
+        "secondFile": {
+          "name": "client/src/component/wholesale-order-shipping-invoice-shipping-billing-close.js",
+          "start": 5,
+          "end": 30,
+          "startLoc": {
+            "line": 5,
+            "column": 2,
+            "position": 22
+          },
+          "endLoc": {
+            "line": 30,
+            "column": 9,
+            "position": 177
+          }
+        }
+      },
+      {
+        "format": "javascript",
+        "lines": 21,
+        "fragment": "},{\"id\":\"production_id\",\"name\":\"Production ID\",\"type\":\"text\",\"required\":false,\"description\":\"Identifier for a production run or sample batch.\",\"label\":\"Production ID\"},{\"id\":\"quality_checks\",\"name\":\"Quality Checks\",\"type\":\"text\",\"required\":false,\"description\":\"QC notes, checkpoints and pass/fail outcomes.\",\"label\":\"Quality Checks\"}];\n\n    // 2️⃣ Apply translations later (if available)\n    this.updateFieldLabels();\n      \n      fgdata.data = { \"data\": this._formData.data || {} };\n   \n\n  }\n\n  populateForm() {\n    \n    const fgdata = this.shadowRoot?.getElementById(\"fg-data\");\n    if (fgdata) {\n      fgdata.data = { \"data\": this._formData[\"data\"] || {} };\n    }\n  \n  }\n}\n\ncustomElements.define(\"fashion-show-production-rehearsal-fittings-fittings-technical-rehearsal\"",
+        "tokens": 0,
+        "firstFile": {
+          "name": "client/src/component/fashion-show-production-rehearsal-fittings-fittings-technical-rehearsal.js",
+          "start": 30,
+          "end": 50,
+          "startLoc": {
+            "line": 30,
+            "column": 15,
+            "position": 198
+          },
+          "endLoc": {
+            "line": 50,
+            "column": 74,
+            "position": 379
+          }
+        },
+        "secondFile": {
+          "name": "client/src/component/wholesale-order-sampling-approval-sample-approval.js",
+          "start": 30,
+          "end": 50,
+          "startLoc": {
+            "line": 30,
+            "column": 33,
+            "position": 224
+          },
+          "endLoc": {
+            "line": 50,
+            "column": 58,
+            "position": 379
+          }
+        }
+      },
+      {
+        "format": "javascript",
+        "lines": 26,
+        "fragment": "extends DynamicHtmlElement {\n   constructor() {\n    super();\n  }\n\n\n  connectedCallback() {\n    this.render();\n    super.connectedCallback();\n  }\n\n  render() {\n    this.shadowRoot.innerHTML = `\n      \n        \u003Cblaze-field-group id=\"fg-data\" context=\"data\"\u003E\u003C/blaze-field-group\u003E\n      \n    `;\n\n    \n      const fgdata = this.shadowRoot.getElementById(\"fg-data\");\n      fgdata.context = \"data\";\n      fgdata.model = {};\n      \n    \n          // 1️⃣ Render fields immediately with default labels\n    fgdata.fields = [{\"id\":\"show_id\"",
+        "tokens": 0,
+        "firstFile": {
+          "name": "client/src/component/fashion-show-production-post-show-archiving-archive-follow-up-orders.js",
+          "start": 5,
+          "end": 30,
+          "startLoc": {
+            "line": 5,
+            "column": 2,
+            "position": 22
+          },
+          "endLoc": {
+            "line": 30,
+            "column": 10,
+            "position": 151
+          }
+        },
+        "secondFile": {
+          "name": "client/src/component/wholesale-order-shipping-invoice-shipping-billing-close.js",
+          "start": 5,
+          "end": 30,
+          "startLoc": {
+            "line": 5,
+            "column": 2,
+            "position": 22
+          },
+          "endLoc": {
+            "line": 30,
+            "column": 16,
+            "position": 151
+          }
+        }
+      },
+      {
+        "format": "javascript",
+        "lines": 21,
+        "fragment": "},{\"id\":\"notes\",\"name\":\"Notes\",\"type\":\"text\",\"required\":false,\"description\":\"Additional production notes, vendors and logistics.\",\"label\":\"Notes\"}];\n\n    // 2️⃣ Apply translations later (if available)\n    this.updateFieldLabels();\n      \n      fgdata.data = { \"data\": this._formData.data || {} };\n   \n\n  }\n\n  populateForm() {\n    \n    const fgdata = this.shadowRoot?.getElementById(\"fg-data\");\n    if (fgdata) {\n      fgdata.data = { \"data\": this._formData[\"data\"] || {} };\n    }\n  \n  }\n}\n\ncustomElements.define(\"fashion-show-production-post-show-archiving-archive-follow-up-orders\"",
+        "tokens": 0,
+        "firstFile": {
+          "name": "client/src/component/fashion-show-production-post-show-archiving-archive-follow-up-orders.js",
+          "start": 30,
+          "end": 50,
+          "startLoc": {
+            "line": 30,
+            "column": 21,
+            "position": 250
+          },
+          "endLoc": {
+            "line": 50,
+            "column": 71,
+            "position": 405
+          }
+        },
+        "secondFile": {
+          "name": "client/src/component/retail-customer-order-aftercare-aftercare-alterations.js",
+          "start": 30,
+          "end": 50,
+          "startLoc": {
+            "line": 30,
+            "column": 15,
+            "position": 224
+          },
+          "endLoc": {
+            "line": 50,
+            "column": 58,
+            "position": 379
+          }
+        }
+      },
+      {
+        "format": "javascript",
+        "lines": 26,
+        "fragment": "extends DynamicHtmlElement {\n   constructor() {\n    super();\n  }\n\n\n  connectedCallback() {\n    this.render();\n    super.connectedCallback();\n  }\n\n  render() {\n    this.shadowRoot.innerHTML = `\n      \n        \u003Cblaze-field-group id=\"fg-data\" context=\"data\"\u003E\u003C/blaze-field-group\u003E\n      \n    `;\n\n    \n      const fgdata = this.shadowRoot.getElementById(\"fg-data\");\n      fgdata.context = \"data\";\n      fgdata.model = {};\n      \n    \n          // 1️⃣ Render fields immediately with default labels\n    fgdata.fields = [{\"id\":\"show_id\",\"name\":\"Show ID\",\"type\":\"text\",\"required\":false,\"description\":\"Unique identifier for the show or event.\",\"label\":\"Show ID\"},{\"id\":\"theme\"",
+        "tokens": 0,
+        "firstFile": {
+          "name": "client/src/component/fashion-show-production-concept-casting-creative-concept-casting.js",
+          "start": 5,
+          "end": 30,
+          "startLoc": {
+            "line": 5,
+            "column": 2,
+            "position": 22
+          },
+          "endLoc": {
+            "line": 30,
+            "column": 8,
+            "position": 177
+          }
+        },
+        "secondFile": {
+          "name": "client/src/component/wholesale-order-shipping-invoice-shipping-billing-close.js",
+          "start": 5,
+          "end": 30,
+          "startLoc": {
+            "line": 5,
+            "column": 2,
+            "position": 22
+          },
+          "endLoc": {
+            "line": 30,
+            "column": 11,
+            "position": 177
+          }
+        }
+      },
+      {
+        "format": "javascript",
+        "lines": 21,
+        "fragment": "},{\"id\":\"notes\",\"name\":\"Notes\",\"type\":\"text\",\"required\":false,\"description\":\"Additional production notes, vendors and logistics.\",\"label\":\"Notes\"}];\n\n    // 2️⃣ Apply translations later (if available)\n    this.updateFieldLabels();\n      \n      fgdata.data = { \"data\": this._formData.data || {} };\n   \n\n  }\n\n  populateForm() {\n    \n    const fgdata = this.shadowRoot?.getElementById(\"fg-data\");\n    if (fgdata) {\n      fgdata.data = { \"data\": this._formData[\"data\"] || {} };\n    }\n  \n  }\n}\n\ncustomElements.define(\"fashion-show-production-concept-casting-creative-concept-casting\"",
+        "tokens": 0,
+        "firstFile": {
+          "name": "client/src/component/fashion-show-production-concept-casting-creative-concept-casting.js",
+          "start": 30,
+          "end": 50,
+          "startLoc": {
+            "line": 30,
+            "column": 9,
+            "position": 250
+          },
+          "endLoc": {
+            "line": 50,
+            "column": 67,
+            "position": 405
+          }
+        },
+        "secondFile": {
+          "name": "client/src/component/retail-customer-order-aftercare-aftercare-alterations.js",
+          "start": 30,
+          "end": 50,
+          "startLoc": {
+            "line": 30,
+            "column": 15,
+            "position": 224
+          },
+          "endLoc": {
+            "line": 50,
+            "column": 58,
+            "position": 379
+          }
+        }
+      },
+      {
+        "format": "javascript",
+        "lines": 26,
+        "fragment": "extends DynamicHtmlElement {\n   constructor() {\n    super();\n  }\n\n\n  connectedCallback() {\n    this.render();\n    super.connectedCallback();\n  }\n\n  render() {\n    this.shadowRoot.innerHTML = `\n      \n        \u003Cblaze-field-group id=\"fg-data\" context=\"data\"\u003E\u003C/blaze-field-group\u003E\n      \n    `;\n\n    \n      const fgdata = this.shadowRoot.getElementById(\"fg-data\");\n      fgdata.context = \"data\";\n      fgdata.model = {};\n      \n    \n          // 1️⃣ Render fields immediately with default labels\n    fgdata.fields = [{\"id\":\"production_id\",\"name\":\"Production ID\",\"type\":\"text\",\"required\":false,\"description\":\"Identifier for a production run or sample batch.\",\"label\":\"Production ID\"},{\"id\":\"factory\",\"name\":\"Factory / Atelier\",\"type\":\"text\",\"required\":false,\"description\":\"Name and location of the production partner or in-house atelier.\",\"label\":\"Factory / Atelier\"},{\"id\":\"quality_checks\"",
+        "tokens": 0,
+        "firstFile": {
+          "name": "client/src/component/bespoke-commission-production-production-quality-control.js",
+          "start": 5,
+          "end": 30,
+          "startLoc": {
+            "line": 5,
+            "column": 2,
+            "position": 22
+          },
+          "endLoc": {
+            "line": 30,
+            "column": 17,
+            "position": 203
+          }
+        },
+        "secondFile": {
+          "name": "client/src/component/wholesale-order-shipping-invoice-shipping-billing-close.js",
+          "start": 5,
+          "end": 30,
+          "startLoc": {
+            "line": 5,
+            "column": 2,
+            "position": 22
+          },
+          "endLoc": {
+            "line": 30,
+            "column": 11,
+            "position": 203
+          }
+        }
+      },
+      {
+        "format": "javascript",
+        "lines": 21,
+        "fragment": "},{\"id\":\"lead_time_days\",\"name\":\"Lead Time (days)\",\"type\":\"number\",\"required\":false,\"description\":\"Estimated production lead time in days.\",\"label\":\"Lead Time (days)\"}];\n\n    // 2️⃣ Apply translations later (if available)\n    this.updateFieldLabels();\n      \n      fgdata.data = { \"data\": this._formData.data || {} };\n   \n\n  }\n\n  populateForm() {\n    \n    const fgdata = this.shadowRoot?.getElementById(\"fg-data\");\n    if (fgdata) {\n      fgdata.data = { \"data\": this._formData[\"data\"] || {} };\n    }\n  \n  }\n}\n\ncustomElements.define(\"bespoke-commission-production-production-quality-control\"",
+        "tokens": 0,
+        "firstFile": {
+          "name": "client/src/component/bespoke-commission-production-production-quality-control.js",
+          "start": 30,
+          "end": 50,
+          "startLoc": {
+            "line": 30,
+            "column": 18,
+            "position": 250
+          },
+          "endLoc": {
+            "line": 50,
+            "column": 59,
+            "position": 405
+          }
+        },
+        "secondFile": {
+          "name": "client/src/component/product-development-production-handover-production-handover.js",
+          "start": 30,
+          "end": 50,
+          "startLoc": {
+            "line": 30,
+            "column": 16,
+            "position": 224
+          },
+          "endLoc": {
+            "line": 50,
+            "column": 58,
+            "position": 379
+          }
+        }
+      },
+      {
+        "format": "javascript",
+        "lines": 26,
+        "fragment": "extends DynamicHtmlElement {\n   constructor() {\n    super();\n  }\n\n\n  connectedCallback() {\n    this.render();\n    super.connectedCallback();\n  }\n\n  render() {\n    this.shadowRoot.innerHTML = `\n      \n        \u003Cblaze-field-group id=\"fg-data\" context=\"data\"\u003E\u003C/blaze-field-group\u003E\n      \n    `;\n\n    \n      const fgdata = this.shadowRoot.getElementById(\"fg-data\");\n      fgdata.context = \"data\";\n      fgdata.model = {};\n      \n    \n          // 1️⃣ Render fields immediately with default labels\n    fgdata.fields = [{\"id\":\"measurements\"",
+        "tokens": 0,
+        "firstFile": {
+          "name": "client/src/component/bespoke-commission-measurement-design-measurements-design-approval.js",
+          "start": 5,
+          "end": 30,
+          "startLoc": {
+            "line": 5,
+            "column": 2,
+            "position": 22
+          },
+          "endLoc": {
+            "line": 30,
+            "column": 15,
+            "position": 151
+          }
+        },
+        "secondFile": {
+          "name": "client/src/component/wholesale-order-shipping-invoice-shipping-billing-close.js",
+          "start": 5,
+          "end": 30,
+          "startLoc": {
+            "line": 5,
+            "column": 2,
+            "position": 22
+          },
+          "endLoc": {
+            "line": 30,
+            "column": 16,
+            "position": 151
+          }
+        }
+      },
+      {
+        "format": "javascript",
+        "lines": 21,
+        "fragment": "},{\"id\":\"designer_notes\",\"name\":\"Designer Notes\",\"type\":\"text\",\"required\":false,\"description\":\"Creative direction, storytelling and styling guidance.\",\"label\":\"Designer Notes\"}];\n\n    // 2️⃣ Apply translations later (if available)\n    this.updateFieldLabels();\n      \n      fgdata.data = { \"data\": this._formData.data || {} };\n   \n\n  }\n\n  populateForm() {\n    \n    const fgdata = this.shadowRoot?.getElementById(\"fg-data\");\n    if (fgdata) {\n      fgdata.data = { \"data\": this._formData[\"data\"] || {} };\n    }\n  \n  }\n}\n\ncustomElements.define(\"bespoke-commission-measurement-design-measurements-design-approval\"",
+        "tokens": 0,
+        "firstFile": {
+          "name": "client/src/component/bespoke-commission-measurement-design-measurements-design-approval.js",
+          "start": 30,
+          "end": 50,
+          "startLoc": {
+            "line": 30,
+            "column": 33,
+            "position": 250
+          },
+          "endLoc": {
+            "line": 50,
+            "column": 69,
+            "position": 405
+          }
+        },
+        "secondFile": {
+          "name": "client/src/component/product-development-design-design-specification.js",
+          "start": 30,
+          "end": 50,
+          "startLoc": {
+            "line": 30,
+            "column": 15,
+            "position": 224
+          },
+          "endLoc": {
+            "line": 50,
+            "column": 58,
+            "position": 379
+          }
+        }
+      },
+      {
+        "format": "javascript",
+        "lines": 26,
+        "fragment": "extends DynamicHtmlElement {\n   constructor() {\n    super();\n  }\n\n\n  connectedCallback() {\n    this.render();\n    super.connectedCallback();\n  }\n\n  render() {\n    this.shadowRoot.innerHTML = `\n      \n        \u003Cblaze-field-group id=\"fg-data\" context=\"data\"\u003E\u003C/blaze-field-group\u003E\n      \n    `;\n\n    \n      const fgdata = this.shadowRoot.getElementById(\"fg-data\");\n      fgdata.context = \"data\";\n      fgdata.model = {};\n      \n    \n          // 1️⃣ Render fields immediately with default labels\n    fgdata.fields = [{\"id\":\"client_id\"",
+        "tokens": 0,
+        "firstFile": {
+          "name": "client/src/component/bespoke-commission-inquiry-inquiry-capture.js",
+          "start": 5,
+          "end": 30,
+          "startLoc": {
+            "line": 5,
+            "column": 2,
+            "position": 22
+          },
+          "endLoc": {
+            "line": 30,
+            "column": 12,
+            "position": 151
+          }
+        },
+        "secondFile": {
+          "name": "client/src/component/wholesale-order-shipping-invoice-shipping-billing-close.js",
+          "start": 5,
+          "end": 30,
+          "startLoc": {
+            "line": 5,
+            "column": 2,
+            "position": 22
+          },
+          "endLoc": {
+            "line": 30,
+            "column": 16,
+            "position": 151
+          }
+        }
+      },
+      {
+        "format": "javascript",
+        "lines": 21,
+        "fragment": "}];\n\n    // 2️⃣ Apply translations later (if available)\n    this.updateFieldLabels();\n      \n      fgdata.data = { \"data\": this._formData.data || {} };\n   \n\n  }\n\n  populateForm() {\n    \n    const fgdata = this.shadowRoot?.getElementById(\"fg-data\");\n    if (fgdata) {\n      fgdata.data = { \"data\": this._formData[\"data\"] || {} };\n    }\n  \n  }\n}\n\ncustomElements.define(\"bespoke-commission-inquiry-inquiry-capture\"",
+        "tokens": 0,
+        "firstFile": {
+          "name": "client/src/component/bespoke-commission-inquiry-inquiry-capture.js",
+          "start": 30,
+          "end": 50,
+          "startLoc": {
+            "line": 30,
+            "column": 13,
+            "position": 302
+          },
+          "endLoc": {
+            "line": 50,
+            "column": 45,
+            "position": 431
+          }
+        },
+        "secondFile": {
+          "name": "client/src/component/wholesale-order-shipping-invoice-shipping-billing-close.js",
+          "start": 30,
+          "end": 50,
+          "startLoc": {
+            "line": 30,
+            "column": 15,
+            "position": 250
+          },
+          "endLoc": {
+            "line": 50,
+            "column": 58,
+            "position": 379
+          }
+        }
+      },
+      {
+        "format": "javascript",
+        "lines": 26,
+        "fragment": "extends DynamicHtmlElement {\n   constructor() {\n    super();\n  }\n\n\n  connectedCallback() {\n    this.render();\n    super.connectedCallback();\n  }\n\n  render() {\n    this.shadowRoot.innerHTML = `\n      \n        \u003Cblaze-field-group id=\"fg-data\" context=\"data\"\u003E\u003C/blaze-field-group\u003E\n      \n    `;\n\n    \n      const fgdata = this.shadowRoot.getElementById(\"fg-data\");\n      fgdata.context = \"data\";\n      fgdata.model = {};\n      \n    \n          // 1️⃣ Render fields immediately with default labels\n    fgdata.fields = [{\"id\":\"delivery_date\",\"name\":\"Delivery Date\",\"type\":\"date\",\"required\":false,\"description\":\"Promised or actual delivery date.\",\"label\":\"Delivery Date\"},{\"id\":\"status\",\"name\":\"Order Status\",\"type\":\"text\",\"required\":false,\"description\":\"Current status (e.g., Draft, Confirmed, In Production, Shipped, Delivered).\",\"label\":\"Order Status\"},{\"id\":\"commission_history\"",
+        "tokens": 0,
+        "firstFile": {
+          "name": "client/src/component/bespoke-commission-delivery-final-delivery-aftercare.js",
+          "start": 5,
+          "end": 30,
+          "startLoc": {
+            "line": 5,
+            "column": 2,
+            "position": 22
+          },
+          "endLoc": {
+            "line": 30,
+            "column": 21,
+            "position": 203
+          }
+        },
+        "secondFile": {
+          "name": "client/src/component/wholesale-order-shipping-invoice-shipping-billing-close.js",
+          "start": 5,
+          "end": 30,
+          "startLoc": {
+            "line": 5,
+            "column": 2,
+            "position": 22
+          },
+          "endLoc": {
+            "line": 30,
+            "column": 10,
+            "position": 203
+          }
+        }
+      },
+      {
+        "format": "javascript",
+        "lines": 21,
+        "fragment": "},{\"id\":\"commission_history\",\"name\":\"Commission History\",\"type\":\"text\",\"required\":false,\"description\":\"Summary of past bespoke commissions and relevant notes.\",\"label\":\"Commission History\"},{\"id\":\"notes\",\"name\":\"Notes\",\"type\":\"text\",\"required\":false,\"description\":\"Additional production notes, vendors and logistics.\",\"label\":\"Notes\"}];\n\n    // 2️⃣ Apply translations later (if available)\n    this.updateFieldLabels();\n      \n      fgdata.data = { \"data\": this._formData.data || {} };\n   \n\n  }\n\n  populateForm() {\n    \n    const fgdata = this.shadowRoot?.getElementById(\"fg-data\");\n    if (fgdata) {\n      fgdata.data = { \"data\": this._formData[\"data\"] || {} };\n    }\n  \n  }\n}\n\ncustomElements.define(\"bespoke-commission-delivery-final-delivery-aftercare\"",
+        "tokens": 0,
+        "firstFile": {
+          "name": "client/src/component/bespoke-commission-delivery-final-delivery-aftercare.js",
+          "start": 30,
+          "end": 50,
+          "startLoc": {
+            "line": 30,
+            "column": 15,
+            "position": 198
+          },
+          "endLoc": {
+            "line": 50,
+            "column": 55,
+            "position": 379
+          }
+        },
+        "secondFile": {
+          "name": "client/src/component/fashion-show-production-post-show-archiving-archive-follow-up-orders.js",
+          "start": 30,
+          "end": 50,
+          "startLoc": {
+            "line": 30,
+            "column": 14,
+            "position": 224
+          },
+          "endLoc": {
+            "line": 50,
+            "column": 58,
+            "position": 379
+          }
+        }
+      },
+      {
+        "format": "javascript",
+        "lines": 26,
+        "fragment": "extends DynamicHtmlElement {\n   constructor() {\n    super();\n  }\n\n\n  connectedCallback() {\n    this.render();\n    super.connectedCallback();\n  }\n\n  render() {\n    this.shadowRoot.innerHTML = `\n      \n        \u003Cblaze-field-group id=\"fg-data\" context=\"data\"\u003E\u003C/blaze-field-group\u003E\n      \n    `;\n\n    \n      const fgdata = this.shadowRoot.getElementById(\"fg-data\");\n      fgdata.context = \"data\";\n      fgdata.model = {};\n      \n    \n          // 1️⃣ Render fields immediately with default labels\n    fgdata.fields = [{\"id\":\"order_id\",\"name\":\"Order ID\",\"type\":\"text\",\"required\":false,\"description\":\"Unique order or PO number.\",\"label\":\"Order ID\"},{\"id\":\"total_value\"",
+        "tokens": 0,
+        "firstFile": {
+          "name": "client/src/component/bespoke-commission-agreement-pricing-agreement-pricing.js",
+          "start": 5,
+          "end": 30,
+          "startLoc": {
+            "line": 5,
+            "column": 2,
+            "position": 22
+          },
+          "endLoc": {
+            "line": 30,
+            "column": 14,
+            "position": 177
+          }
+        },
+        "secondFile": {
+          "name": "client/src/component/wholesale-order-shipping-invoice-shipping-billing-close.js",
+          "start": 5,
+          "end": 30,
+          "startLoc": {
+            "line": 5,
+            "column": 2,
+            "position": 22
+          },
+          "endLoc": {
+            "line": 30,
+            "column": 13,
+            "position": 177
+          }
+        }
+      },
+      {
+        "format": "javascript",
+        "lines": 21,
+        "fragment": "},{\"id\":\"production_cost\",\"name\":\"Production Cost\",\"type\":\"number\",\"required\":false,\"description\":\"Manufacturing cost for the run (per unit or total).\",\"label\":\"Production Cost\"}];\n\n    // 2️⃣ Apply translations later (if available)\n    this.updateFieldLabels();\n      \n      fgdata.data = { \"data\": this._formData.data || {} };\n   \n\n  }\n\n  populateForm() {\n    \n    const fgdata = this.shadowRoot?.getElementById(\"fg-data\");\n    if (fgdata) {\n      fgdata.data = { \"data\": this._formData[\"data\"] || {} };\n    }\n  \n  }\n}\n\ncustomElements.define(\"bespoke-commission-agreement-pricing-agreement-pricing\"",
+        "tokens": 0,
+        "firstFile": {
+          "name": "client/src/component/bespoke-commission-agreement-pricing-agreement-pricing.js",
+          "start": 30,
+          "end": 50,
+          "startLoc": {
+            "line": 30,
+            "column": 15,
+            "position": 250
+          },
+          "endLoc": {
+            "line": 50,
+            "column": 57,
+            "position": 405
+          }
+        },
+        "secondFile": {
+          "name": "client/src/component/retail-customer-order-fulfillment-pick-pack-prepare.js",
+          "start": 30,
+          "end": 50,
+          "startLoc": {
+            "line": 30,
+            "column": 11,
+            "position": 224
+          },
+          "endLoc": {
+            "line": 50,
+            "column": 58,
+            "position": 379
+          }
+        }
+      }
+    ]
+  },
+  "complexity": {
+    "summary": {
+      "filesAnalyzed": 40,
+      "totalCyclomatic": 166,
+      "avgCyclomaticPerFunction": 1.71,
+      "avgMaintainability": 94.34
+    },
+    "perFile": [
+      {
+        "file": "client/src/locale/lang.js",
+        "functions": 0,
+        "cyclomatic": 0,
+        "maintainability": 171
+      },
+      {
+        "file": "client/src/component/bespoke-commission-agreement-pricing-agreement-pricing.js",
+        "functions": 4,
+        "cyclomatic": 7,
+        "maintainability": 104.258
+      },
+      {
+        "file": "client/src/component/bespoke-commission-delivery-final-delivery-aftercare.js",
+        "functions": 4,
+        "cyclomatic": 7,
+        "maintainability": 106.842
+      },
+      {
+        "file": "client/src/component/bespoke-commission-inquiry-inquiry-capture.js",
+        "functions": 4,
+        "cyclomatic": 7,
+        "maintainability": 102.017
+      },
+      {
+        "file": "client/src/component/bespoke-commission-measurement-design-measurements-design-approval.js",
+        "functions": 4,
+        "cyclomatic": 7,
+        "maintainability": 104.197
+      },
+      {
+        "file": "client/src/component/bespoke-commission-production-production-quality-control.js",
+        "functions": 4,
+        "cyclomatic": 7,
+        "maintainability": 104.318
+      },
+      {
+        "file": "client/src/component/fashion-show-production-concept-casting-creative-concept-casting.js",
+        "functions": 4,
+        "cyclomatic": 7,
+        "maintainability": 104.258
+      },
+      {
+        "file": "client/src/component/fashion-show-production-post-show-archiving-archive-follow-up-orders.js",
+        "functions": 4,
+        "cyclomatic": 7,
+        "maintainability": 104.258
+      },
+      {
+        "file": "client/src/component/fashion-show-production-rehearsal-fittings-fittings-technical-rehearsal.js",
+        "functions": 4,
+        "cyclomatic": 7,
+        "maintainability": 106.776
+      },
+      {
+        "file": "client/src/component/fashion-show-production-runway-execution-event-execution.js",
+        "functions": 4,
+        "cyclomatic": 7,
+        "maintainability": 104.197
+      },
+      {
+        "file": "client/src/component/product-development-concept-concept-brief.js",
+        "functions": 4,
+        "cyclomatic": 7,
+        "maintainability": 104.197
+      },
+      {
+        "file": "client/src/component/product-development-design-design-specification.js",
+        "functions": 4,
+        "cyclomatic": 7,
+        "maintainability": 106.842
+      },
+      {
+        "file": "client/src/component/product-development-launch-launch-commercialization.js",
+        "functions": 4,
+        "cyclomatic": 7,
+        "maintainability": 109.861
+      },
+      {
+        "file": "client/src/component/product-development-production-handover-production-handover.js",
+        "functions": 4,
+        "cyclomatic": 7,
+        "maintainability": 106.842
+      },
+      {
+        "file": "client/src/component/product-development-sampling-sample-creation-review.js",
+        "functions": 4,
+        "cyclomatic": 7,
+        "maintainability": 106.906
+      },
+      {
+        "file": "client/src/component/retail-customer-order-aftercare-aftercare-alterations.js",
+        "functions": 4,
+        "cyclomatic": 7,
+        "maintainability": 106.776
+      },
+      {
+        "file": "client/src/component/retail-customer-order-delivery-dispatch-delivery.js",
+        "functions": 4,
+        "cyclomatic": 7,
+        "maintainability": 106.842
+      },
+      {
+        "file": "client/src/component/retail-customer-order-fulfillment-pick-pack-prepare.js",
+        "functions": 4,
+        "cyclomatic": 7,
+        "maintainability": 106.842
+      },
+      {
+        "file": "client/src/component/retail-customer-order-purchase-order-capture.js",
+        "functions": 4,
+        "cyclomatic": 7,
+        "maintainability": 102.017
+      },
+      {
+        "file": "client/src/component/wholesale-order-manufacturing-manufacturing-run.js",
+        "functions": 4,
+        "cyclomatic": 7,
+        "maintainability": 106.842
+      },
+      {
+        "file": "client/src/component/wholesale-order-order-received-order-receipt-validation.js",
+        "functions": 4,
+        "cyclomatic": 7,
+        "maintainability": 102.017
+      },
+      {
+        "file": "client/src/component/wholesale-order-quality-check-quality-control-sign-off.js",
+        "functions": 4,
+        "cyclomatic": 7,
+        "maintainability": 109.792
+      },
+      {
+        "file": "client/src/component/wholesale-order-sampling-approval-sample-approval.js",
+        "functions": 4,
+        "cyclomatic": 7,
+        "maintainability": 104.197
+      },
+      {
+        "file": "client/src/component/wholesale-order-shipping-invoice-shipping-billing-close.js",
+        "functions": 4,
+        "cyclomatic": 7,
+        "maintainability": 106.906
+      },
+      {
+        "file": "client/src/portal/standard/index.js",
+        "functions": 0,
+        "cyclomatic": 0,
+        "maintainability": 126.044
+      },
+      {
+        "file": "core/case-type/bespoke-commission.js",
+        "functions": 1,
+        "cyclomatic": 1,
+        "maintainability": 68.892
+      },
+      {
+        "file": "core/case-type/fashion-show-production.js",
+        "functions": 1,
+        "cyclomatic": 1,
+        "maintainability": 73.34
+      },
+      {
+        "file": "core/case-type/product-development.js",
+        "functions": 1,
+        "cyclomatic": 1,
+        "maintainability": 68.62
+      },
+      {
+        "file": "core/case-type/retail-customer-order.js",
+        "functions": 1,
+        "cyclomatic": 1,
+        "maintainability": 73.248
+      },
+      {
+        "file": "core/case-type/wholesale-order.js",
+        "functions": 1,
+        "cyclomatic": 1,
+        "maintainability": 68.797
+      },
+      {
+        "file": "core/data-model/address.js",
+        "functions": 0,
+        "cyclomatic": 0,
+        "maintainability": 70.758
+      },
+      {
+        "file": "core/data-model/blaze-entity.js",
+        "functions": 0,
+        "cyclomatic": 0,
+        "maintainability": 79.629
+      },
+      {
+        "file": "core/data-model/client_model.js",
+        "functions": 0,
+        "cyclomatic": 0,
+        "maintainability": 62.389
+      },
+      {
+        "file": "core/data-model/customer.js",
+        "functions": 0,
+        "cyclomatic": 0,
+        "maintainability": 65.379
+      },
+      {
+        "file": "core/data-model/order_model.js",
+        "functions": 0,
+        "cyclomatic": 0,
+        "maintainability": 62.318
+      },
+      {
+        "file": "core/data-model/person.js",
+        "functions": 0,
+        "cyclomatic": 0,
+        "maintainability": 68.394
+      },
+      {
+        "file": "core/data-model/product_model.js",
+        "functions": 0,
+        "cyclomatic": 0,
+        "maintainability": 60.748
+      },
+      {
+        "file": "core/data-model/production_model.js",
+        "functions": 0,
+        "cyclomatic": 0,
+        "maintainability": 64.093
+      },
+      {
+        "file": "core/data-model/role.js",
+        "functions": 0,
+        "cyclomatic": 0,
+        "maintainability": 97.32
+      },
+      {
+        "file": "core/data-model/user.js",
+        "functions": 0,
+        "cyclomatic": 0,
+        "maintainability": 64.468
+      }
+    ]
+  },
+  "deadcode": {
+    "files": [
+      "config.js",
+      "prebuild.js",
+      "core/data-model/address.js",
+      "core/data-model/blaze-entity.js",
+      "core/data-model/client_model.js",
+      "core/data-model/customer.js",
+      "core/data-model/order_model.js",
+      "core/data-model/person.js",
+      "core/data-model/product_model.js",
+      "core/data-model/production_model.js",
+      "core/data-model/role.js",
+      "core/data-model/user.js",
+      "function/calculation/calculate-age.js",
+      "function/calculation/data-providers.js",
+      "function/decision/route-by-age.js",
+      "function/integration/fetch-risk-score.js",
+      "function/transformation/normalize-client-name.js",
+      "client/src/locale/lang.js"
+    ],
+    "issues": [
+      {
+        "file": "package.json",
+        "dependencies": [
+          {
+            "name": "@blaze-case-ai/blaze-ux",
+            "line": 15,
+            "col": 6,
+            "pos": 457
+          },
+          {
+            "name": "@fortawesome/fontawesome-free",
+            "line": 16,
+            "col": 6,
+            "pos": 498
+          },
+          {
+            "name": "bcryptjs",
+            "line": 17,
+            "col": 6,
+            "pos": 545
+          },
+          {
+            "name": "chart.js",
+            "line": 18,
+            "col": 6,
+            "pos": 571
+          },
+          {
+            "name": "jsonwebtoken",
+            "line": 22,
+            "col": 6,
+            "pos": 670
+          },
+          {
+            "name": "mongodb",
+            "line": 23,
+            "col": 6,
+            "pos": 700
+          }
+        ],
+        "devDependencies": [],
+        "optionalPeerDependencies": [],
+        "unlisted": [],
+        "binaries": [],
+        "unresolved": [],
+        "exports": [],
+        "types": [],
+        "enumMembers": {},
+        "duplicates": [],
+        "catalog": []
+      },
+      {
+        "file": "client/src/component/knip-dynamic-registry.js",
+        "dependencies": [],
+        "devDependencies": [],
+        "optionalPeerDependencies": [],
+        "unlisted": [],
+        "binaries": [],
+        "unresolved": [
+          {
+            "name": "./bespoke-commission-inquiry-start.js",
+            "line": 2,
+            "col": 8,
+            "pos": 67
+          },
+          {
+            "name": "./bespoke-commission-inquiry-end.js",
+            "line": 4,
+            "col": 8,
+            "pos": 173
+          },
+          {
+            "name": "./bespoke-commission-measurement-design-start.js",
+            "line": 5,
+            "col": 8,
+            "pos": 219
+          },
+          {
+            "name": "./bespoke-commission-measurement-design-end.js",
+            "line": 7,
+            "col": 8,
+            "pos": 360
+          },
+          {
+            "name": "./bespoke-commission-agreement-pricing-start.js",
+            "line": 8,
+            "col": 8,
+            "pos": 417
+          },
+          {
+            "name": "./bespoke-commission-agreement-pricing-end.js",
+            "line": 10,
+            "col": 8,
+            "pos": 545
+          },
+          {
+            "name": "./bespoke-commission-production-start.js",
+            "line": 11,
+            "col": 8,
+            "pos": 601
+          },
+          {
+            "name": "./bespoke-commission-production-end.js",
+            "line": 13,
+            "col": 8,
+            "pos": 724
+          },
+          {
+            "name": "./bespoke-commission-delivery-start.js",
+            "line": 14,
+            "col": 8,
+            "pos": 773
+          },
+          {
+            "name": "./bespoke-commission-delivery-end.js",
+            "line": 16,
+            "col": 8,
+            "pos": 890
+          },
+          {
+            "name": "./fashion-show-production-concept-casting-start.js",
+            "line": 17,
+            "col": 8,
+            "pos": 937
+          },
+          {
+            "name": "./fashion-show-production-concept-casting-end.js",
+            "line": 19,
+            "col": 8,
+            "pos": 1078
+          },
+          {
+            "name": "./fashion-show-production-rehearsal-fittings-start.js",
+            "line": 20,
+            "col": 8,
+            "pos": 1137
+          },
+          {
+            "name": "./fashion-show-production-rehearsal-fittings-end.js",
+            "line": 22,
+            "col": 8,
+            "pos": 1288
+          },
+          {
+            "name": "./fashion-show-production-runway-execution-start.js",
+            "line": 23,
+            "col": 8,
+            "pos": 1350
+          },
+          {
+            "name": "./fashion-show-production-runway-execution-end.js",
+            "line": 25,
+            "col": 8,
+            "pos": 1484
+          },
+          {
+            "name": "./fashion-show-production-post-show-archiving-start.js",
+            "line": 26,
+            "col": 8,
+            "pos": 1544
+          },
+          {
+            "name": "./fashion-show-production-post-show-archiving-end.js",
+            "line": 28,
+            "col": 8,
+            "pos": 1693
+          },
+          {
+            "name": "./product-development-concept-start.js",
+            "line": 29,
+            "col": 8,
+            "pos": 1756
+          },
+          {
+            "name": "./product-development-concept-end.js",
+            "line": 31,
+            "col": 8,
+            "pos": 1862
+          },
+          {
+            "name": "./product-development-design-start.js",
+            "line": 32,
+            "col": 8,
+            "pos": 1909
+          },
+          {
+            "name": "./product-development-design-end.js",
+            "line": 34,
+            "col": 8,
+            "pos": 2020
+          },
+          {
+            "name": "./product-development-sampling-start.js",
+            "line": 35,
+            "col": 8,
+            "pos": 2066
+          },
+          {
+            "name": "./product-development-sampling-end.js",
+            "line": 37,
+            "col": 8,
+            "pos": 2183
+          },
+          {
+            "name": "./product-development-production-handover-start.js",
+            "line": 38,
+            "col": 8,
+            "pos": 2231
+          },
+          {
+            "name": "./product-development-production-handover-end.js",
+            "line": 40,
+            "col": 8,
+            "pos": 2367
+          },
+          {
+            "name": "./product-development-launch-start.js",
+            "line": 41,
+            "col": 8,
+            "pos": 2426
+          },
+          {
+            "name": "./product-development-launch-end.js",
+            "line": 43,
+            "col": 8,
+            "pos": 2541
+          },
+          {
+            "name": "./retail-customer-order-purchase-start.js",
+            "line": 44,
+            "col": 8,
+            "pos": 2587
+          },
+          {
+            "name": "./retail-customer-order-purchase-end.js",
+            "line": 46,
+            "col": 8,
+            "pos": 2699
+          },
+          {
+            "name": "./retail-customer-order-fulfillment-start.js",
+            "line": 47,
+            "col": 8,
+            "pos": 2749
+          },
+          {
+            "name": "./retail-customer-order-fulfillment-end.js",
+            "line": 49,
+            "col": 8,
+            "pos": 2871
+          },
+          {
+            "name": "./retail-customer-order-delivery-start.js",
+            "line": 50,
+            "col": 8,
+            "pos": 2924
+          },
+          {
+            "name": "./retail-customer-order-delivery-end.js",
+            "line": 52,
+            "col": 8,
+            "pos": 3040
+          },
+          {
+            "name": "./retail-customer-order-aftercare-start.js",
+            "line": 53,
+            "col": 8,
+            "pos": 3090
+          },
+          {
+            "name": "./retail-customer-order-aftercare-end.js",
+            "line": 55,
+            "col": 8,
+            "pos": 3212
+          },
+          {
+            "name": "./wholesale-order-order-received-start.js",
+            "line": 56,
+            "col": 8,
+            "pos": 3263
+          },
+          {
+            "name": "./wholesale-order-order-received-end.js",
+            "line": 58,
+            "col": 8,
+            "pos": 3386
+          },
+          {
+            "name": "./wholesale-order-sampling-approval-start.js",
+            "line": 59,
+            "col": 8,
+            "pos": 3436
+          },
+          {
+            "name": "./wholesale-order-sampling-approval-end.js",
+            "line": 61,
+            "col": 8,
+            "pos": 3556
+          },
+          {
+            "name": "./wholesale-order-manufacturing-start.js",
+            "line": 62,
+            "col": 8,
+            "pos": 3609
+          },
+          {
+            "name": "./wholesale-order-manufacturing-end.js",
+            "line": 64,
+            "col": 8,
+            "pos": 3723
+          },
+          {
+            "name": "./wholesale-order-quality-check-start.js",
+            "line": 65,
+            "col": 8,
+            "pos": 3772
+          },
+          {
+            "name": "./wholesale-order-quality-check-end.js",
+            "line": 67,
+            "col": 8,
+            "pos": 3893
+          },
+          {
+            "name": "./wholesale-order-shipping-invoice-start.js",
+            "line": 68,
+            "col": 8,
+            "pos": 3942
+          },
+          {
+            "name": "./wholesale-order-shipping-invoice-end.js",
+            "line": 70,
+            "col": 8,
+            "pos": 4067
+          }
+        ],
+        "exports": [],
+        "types": [],
+        "enumMembers": {},
+        "duplicates": [],
+        "catalog": []
+      },
+      {
+        "file": "client/src/component/bespoke-commission-inquiry-inquiry-capture.js",
+        "dependencies": [],
+        "devDependencies": [],
+        "optionalPeerDependencies": [],
+        "unlisted": [],
+        "binaries": [],
+        "unresolved": [],
+        "exports": [
+          {
+            "name": "default",
+            "line": 51,
+            "col": 8,
+            "pos": 2091
+          }
+        ],
+        "types": [],
+        "enumMembers": {},
+        "duplicates": [],
+        "catalog": []
+      },
+      {
+        "file": "client/src/component/bespoke-commission-measurement-design-measurements-design-approval.js",
+        "dependencies": [],
+        "devDependencies": [],
+        "optionalPeerDependencies": [],
+        "unlisted": [],
+        "binaries": [],
+        "unresolved": [],
+        "exports": [
+          {
+            "name": "default",
+            "line": 51,
+            "col": 8,
+            "pos": 2194
+          }
+        ],
+        "types": [],
+        "enumMembers": {},
+        "duplicates": [],
+        "catalog": []
+      },
+      {
+        "file": "client/src/component/bespoke-commission-agreement-pricing-agreement-pricing.js",
+        "dependencies": [],
+        "devDependencies": [],
+        "optionalPeerDependencies": [],
+        "unlisted": [],
+        "binaries": [],
+        "unresolved": [],
+        "exports": [
+          {
+            "name": "default",
+            "line": 51,
+            "col": 8,
+            "pos": 2052
+          }
+        ],
+        "types": [],
+        "enumMembers": {},
+        "duplicates": [],
+        "catalog": []
+      },
+      {
+        "file": "client/src/component/bespoke-commission-production-production-quality-control.js",
+        "dependencies": [],
+        "devDependencies": [],
+        "optionalPeerDependencies": [],
+        "unlisted": [],
+        "binaries": [],
+        "unresolved": [],
+        "exports": [
+          {
+            "name": "default",
+            "line": 51,
+            "col": 8,
+            "pos": 2149
+          }
+        ],
+        "types": [],
+        "enumMembers": {},
+        "duplicates": [],
+        "catalog": []
+      },
+      {
+        "file": "client/src/component/bespoke-commission-delivery-final-delivery-aftercare.js",
+        "dependencies": [],
+        "devDependencies": [],
+        "optionalPeerDependencies": [],
+        "unlisted": [],
+        "binaries": [],
+        "unresolved": [],
+        "exports": [
+          {
+            "name": "default",
+            "line": 51,
+            "col": 8,
+            "pos": 1953
+          }
+        ],
+        "types": [],
+        "enumMembers": {},
+        "duplicates": [],
+        "catalog": []
+      },
+      {
+        "file": "client/src/component/fashion-show-production-concept-casting-creative-concept-casting.js",
+        "dependencies": [],
+        "devDependencies": [],
+        "optionalPeerDependencies": [],
+        "unlisted": [],
+        "binaries": [],
+        "unresolved": [],
+        "exports": [
+          {
+            "name": "default",
+            "line": 51,
+            "col": 8,
+            "pos": 2050
+          }
+        ],
+        "types": [],
+        "enumMembers": {},
+        "duplicates": [],
+        "catalog": []
+      },
+      {
+        "file": "client/src/component/fashion-show-production-rehearsal-fittings-fittings-technical-rehearsal.js",
+        "dependencies": [],
+        "devDependencies": [],
+        "optionalPeerDependencies": [],
+        "unlisted": [],
+        "binaries": [],
+        "unresolved": [],
+        "exports": [
+          {
+            "name": "default",
+            "line": 51,
+            "col": 8,
+            "pos": 1991
+          }
+        ],
+        "types": [],
+        "enumMembers": {},
+        "duplicates": [],
+        "catalog": []
+      },
+      {
+        "file": "client/src/component/fashion-show-production-runway-execution-event-execution.js",
+        "dependencies": [],
+        "devDependencies": [],
+        "optionalPeerDependencies": [],
+        "unlisted": [],
+        "binaries": [],
+        "unresolved": [],
+        "exports": [
+          {
+            "name": "default",
+            "line": 51,
+            "col": 8,
+            "pos": 2048
+          }
+        ],
+        "types": [],
+        "enumMembers": {},
+        "duplicates": [],
+        "catalog": []
+      },
+      {
+        "file": "client/src/component/fashion-show-production-post-show-archiving-archive-follow-up-orders.js",
+        "dependencies": [],
+        "devDependencies": [],
+        "optionalPeerDependencies": [],
+        "unlisted": [],
+        "binaries": [],
+        "unresolved": [],
+        "exports": [
+          {
+            "name": "default",
+            "line": 51,
+            "col": 8,
+            "pos": 2069
+          }
+        ],
+        "types": [],
+        "enumMembers": {},
+        "duplicates": [],
+        "catalog": []
+      },
+      {
+        "file": "client/src/component/product-development-concept-concept-brief.js",
+        "dependencies": [],
+        "devDependencies": [],
+        "optionalPeerDependencies": [],
+        "unlisted": [],
+        "binaries": [],
+        "unresolved": [],
+        "exports": [
+          {
+            "name": "default",
+            "line": 51,
+            "col": 8,
+            "pos": 2041
+          }
+        ],
+        "types": [],
+        "enumMembers": {},
+        "duplicates": [],
+        "catalog": []
+      },
+      {
+        "file": "client/src/component/product-development-design-design-specification.js",
+        "dependencies": [],
+        "devDependencies": [],
+        "optionalPeerDependencies": [],
+        "unlisted": [],
+        "binaries": [],
+        "unresolved": [],
+        "exports": [
+          {
+            "name": "default",
+            "line": 51,
+            "col": 8,
+            "pos": 1965
+          }
+        ],
+        "types": [],
+        "enumMembers": {},
+        "duplicates": [],
+        "catalog": []
+      },
+      {
+        "file": "client/src/component/product-development-sampling-sample-creation-review.js",
+        "dependencies": [],
+        "devDependencies": [],
+        "optionalPeerDependencies": [],
+        "unlisted": [],
+        "binaries": [],
+        "unresolved": [],
+        "exports": [
+          {
+            "name": "default",
+            "line": 51,
+            "col": 8,
+            "pos": 1950
+          }
+        ],
+        "types": [],
+        "enumMembers": {},
+        "duplicates": [],
+        "catalog": []
+      },
+      {
+        "file": "client/src/component/product-development-production-handover-production-handover.js",
+        "dependencies": [],
+        "devDependencies": [],
+        "optionalPeerDependencies": [],
+        "unlisted": [],
+        "binaries": [],
+        "unresolved": [],
+        "exports": [
+          {
+            "name": "default",
+            "line": 51,
+            "col": 8,
+            "pos": 1999
+          }
+        ],
+        "types": [],
+        "enumMembers": {},
+        "duplicates": [],
+        "catalog": []
+      },
+      {
+        "file": "client/src/component/product-development-launch-launch-commercialization.js",
+        "dependencies": [],
+        "devDependencies": [],
+        "optionalPeerDependencies": [],
+        "unlisted": [],
+        "binaries": [],
+        "unresolved": [],
+        "exports": [
+          {
+            "name": "default",
+            "line": 51,
+            "col": 8,
+            "pos": 1744
+          }
+        ],
+        "types": [],
+        "enumMembers": {},
+        "duplicates": [],
+        "catalog": []
+      },
+      {
+        "file": "client/src/component/retail-customer-order-purchase-order-capture.js",
+        "dependencies": [],
+        "devDependencies": [],
+        "optionalPeerDependencies": [],
+        "unlisted": [],
+        "binaries": [],
+        "unresolved": [],
+        "exports": [
+          {
+            "name": "default",
+            "line": 51,
+            "col": 8,
+            "pos": 2101
+          }
+        ],
+        "types": [],
+        "enumMembers": {},
+        "duplicates": [],
+        "catalog": []
+      },
+      {
+        "file": "client/src/component/retail-customer-order-fulfillment-pick-pack-prepare.js",
+        "dependencies": [],
+        "devDependencies": [],
+        "optionalPeerDependencies": [],
+        "unlisted": [],
+        "binaries": [],
+        "unresolved": [],
+        "exports": [
+          {
+            "name": "default",
+            "line": 51,
+            "col": 8,
+            "pos": 1936
+          }
+        ],
+        "types": [],
+        "enumMembers": {},
+        "duplicates": [],
+        "catalog": []
+      },
+      {
+        "file": "client/src/component/retail-customer-order-delivery-dispatch-delivery.js",
+        "dependencies": [],
+        "devDependencies": [],
+        "optionalPeerDependencies": [],
+        "unlisted": [],
+        "binaries": [],
+        "unresolved": [],
+        "exports": [
+          {
+            "name": "default",
+            "line": 51,
+            "col": 8,
+            "pos": 1881
+          }
+        ],
+        "types": [],
+        "enumMembers": {},
+        "duplicates": [],
+        "catalog": []
+      },
+      {
+        "file": "client/src/component/retail-customer-order-aftercare-aftercare-alterations.js",
+        "dependencies": [],
+        "devDependencies": [],
+        "optionalPeerDependencies": [],
+        "unlisted": [],
+        "binaries": [],
+        "unresolved": [],
+        "exports": [
+          {
+            "name": "default",
+            "line": 51,
+            "col": 8,
+            "pos": 1975
+          }
+        ],
+        "types": [],
+        "enumMembers": {},
+        "duplicates": [],
+        "catalog": []
+      },
+      {
+        "file": "client/src/component/wholesale-order-order-received-order-receipt-validation.js",
+        "dependencies": [],
+        "devDependencies": [],
+        "optionalPeerDependencies": [],
+        "unlisted": [],
+        "binaries": [],
+        "unresolved": [],
+        "exports": [
+          {
+            "name": "default",
+            "line": 51,
+            "col": 8,
+            "pos": 2169
+          }
+        ],
+        "types": [],
+        "enumMembers": {},
+        "duplicates": [],
+        "catalog": []
+      },
+      {
+        "file": "client/src/component/wholesale-order-sampling-approval-sample-approval.js",
+        "dependencies": [],
+        "devDependencies": [],
+        "optionalPeerDependencies": [],
+        "unlisted": [],
+        "binaries": [],
+        "unresolved": [],
+        "exports": [
+          {
+            "name": "default",
+            "line": 51,
+            "col": 8,
+            "pos": 2115
+          }
+        ],
+        "types": [],
+        "enumMembers": {},
+        "duplicates": [],
+        "catalog": []
+      },
+      {
+        "file": "client/src/component/wholesale-order-manufacturing-manufacturing-run.js",
+        "dependencies": [],
+        "devDependencies": [],
+        "optionalPeerDependencies": [],
+        "unlisted": [],
+        "binaries": [],
+        "unresolved": [],
+        "exports": [
+          {
+            "name": "default",
+            "line": 51,
+            "col": 8,
+            "pos": 1965
+          }
+        ],
+        "types": [],
+        "enumMembers": {},
+        "duplicates": [],
+        "catalog": []
+      },
+      {
+        "file": "client/src/component/wholesale-order-quality-check-quality-control-sign-off.js",
+        "dependencies": [],
+        "devDependencies": [],
+        "optionalPeerDependencies": [],
+        "unlisted": [],
+        "binaries": [],
+        "unresolved": [],
+        "exports": [
+          {
+            "name": "default",
+            "line": 51,
+            "col": 8,
+            "pos": 1807
+          }
+        ],
+        "types": [],
+        "enumMembers": {},
+        "duplicates": [],
+        "catalog": []
+      },
+      {
+        "file": "client/src/component/wholesale-order-shipping-invoice-shipping-billing-close.js",
+        "dependencies": [],
+        "devDependencies": [],
+        "optionalPeerDependencies": [],
+        "unlisted": [],
+        "binaries": [],
+        "unresolved": [],
+        "exports": [
+          {
+            "name": "default",
+            "line": 51,
+            "col": 8,
+            "pos": 1898
+          }
+        ],
+        "types": [],
+        "enumMembers": {},
+        "duplicates": [],
+        "catalog": []
+      }
+    ]
+  }
+}

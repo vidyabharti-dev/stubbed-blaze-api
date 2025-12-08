@@ -560,6 +560,16 @@ app.get(
   }
 );
 
+app.get("/:app/api/app-metrics", (req, res) => {
+  try {
+    const metrics = require("./database/app-metrics.json");
+    return res.json(metrics);
+  } catch (err) {
+    console.error("Error loading app-metrics.js:", err.message);
+    return res.status(500).json({error: "App metrics not found"});
+  }
+});
+
 app.listen(PORT, () => {
   console.log("Stubbed API running on port", PORT);
 });
