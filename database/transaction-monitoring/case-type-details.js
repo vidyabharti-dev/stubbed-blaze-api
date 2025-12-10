@@ -73,6 +73,34 @@ module.exports = {
             },
           },
           {
+            id: "fraud-decision",
+            label: "Fraud Decision",
+            type: "decision",
+            function: "route-by-fraud-status",
+            connectors: {
+              trueConnector: {
+                destinationStepId: "finalize-investigation",
+              },
+              falseConnector: {
+                destinationStepId: "investigate",
+              },
+            },
+          },
+          {
+            id: "finalize-investigation",
+            label: "Finalize Investigation",
+            type: "manual",
+            status: "pending",
+            view: "fraud-detection-investigation-finalize",
+            dataModelReference: {
+              models: [
+                "fraud_classification",
+                "recommended_actions",
+                "final_review_date",
+              ],
+            },
+          },
+          {
             id: "end",
             label: "End",
             type: "end",

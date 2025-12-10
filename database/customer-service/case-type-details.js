@@ -73,6 +73,20 @@ module.exports = {
             },
           },
           {
+            id: "decision",
+            label: "Routing Decision",
+            type: "decision",
+            function: "route-by-investigation-status",
+            connectors: {
+              trueConnector: {
+                destinationStepId: "end", // means investigation complete
+              },
+              falseConnector: {
+                destinationStepId: "investigate", // repeat investigation
+              },
+            },
+          },
+          {
             id: "end",
             label: "End",
             type: "end",

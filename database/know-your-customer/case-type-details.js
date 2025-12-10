@@ -677,6 +677,34 @@ module.exports = {
             },
           },
           {
+            id: "delivery-decision",
+            label: "Delivery Status Check",
+            type: "decision",
+            function: "route-by-delivery-status",
+            connectors: {
+              trueConnector: {
+                destinationStepId: "finalize-delivery",
+              },
+              falseConnector: {
+                destinationStepId: "retail-delivery",
+              },
+            },
+          },
+          {
+            id: "finalize-delivery",
+            label: "Finalize Delivery",
+            type: "manual",
+            status: "pending",
+            view: "retail-customer-order-delivery-finalize",
+            dataModelReference: {
+              models: [
+                "confirmation_notes",
+                "customer_acknowledgement",
+                "final_status",
+              ],
+            },
+          },
+          {
             id: "end",
             label: "End",
             type: "end",
