@@ -45,9 +45,17 @@ app.get("/api/application", (req, res) => {
   res.json(apps);
 });
 
+const academyRoute = require("./routes/creditcheck.js");
+app.use("/api/academy", academyRoute);
+
 // Middleware: validate app name
 app.use("/:app/*rest", (req, res, next) => {
   const appName = req.params.app;
+
+  // Ignore /api routes
+  if (appName === "api") {
+    return next();
+  }
 
   if (!validApps.includes(appName)) {
     return res.status(404).json({error: "Invalid app"});
@@ -55,6 +63,17 @@ app.use("/:app/*rest", (req, res, next) => {
 
   next();
 });
+
+// Middleware: validate app name
+// app.use("/:app/*rest", (req, res, next) => {
+//   const appName = req.params.app;
+
+//   if (!validApps.includes(appName)) {
+//     return res.status(404).json({error: "Invalid app"});
+//   }
+
+//   next();
+// });
 
 const dashboardRoute = require("./routes/dashboard");
 app.use("/", dashboardRoute);
