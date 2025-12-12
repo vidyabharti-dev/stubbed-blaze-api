@@ -1,4 +1,7 @@
 
+get all application  
+<BASE_URL>/api/application
+https://stubbed-blaze-api.onrender.com/api/application
 
 
 
