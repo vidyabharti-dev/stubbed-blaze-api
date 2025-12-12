@@ -306,8 +306,8 @@ module.exports = function (caseObj) {
 };
  
 <BASE_URL>/{app}/api/function/{category}/{id}/execute
-stubbed-blaze-api.onrender.com/customer-service/api/function/calculation/averageResolutionTimeRepor…
- 
+ https://stubbed-blaze-api.onrender.com/customer-service/api/function/calculation/averageResolutionTimeReport/execute
+
 dashboard
 https://stubbed-blaze-api.onrender.com/customer-service/api/dashboard
 locale
