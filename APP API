@@ -1,0 +1,318 @@
+
+
+
+
+
+get all case type 
+<BASE_URL>/{app}/api/case-type
+
+stubbed-blaze-api.onrender.com/customer-service/api/case-type
+
+
+ <BASE_URL>/{app}/api/case-type/{id}
+get case type by id 
+stubbed-blaze-api.onrender.com/customer-service/api/case-type/customer-complaint
+ 
+get all application
+
+<BASE_URL>/api/application
+stubbed-blaze-api.onrender.com/api/application
+ 
+ 
+ 
+post 
+CREATE CASE
+<BASE_URL>/{app}/api/case
+https://stubbed-blaze-api.onrender.com/know-your-customer/api/case
+req:
+{
+  "caseType": {
+    "id": "kyc-basic"
+  }
+}
+ 
+res :
+{
+    "caseId": "C-468",
+    "caseType": {
+        "id": "kyc-basic"
+    },
+    "key": "know-your-customer-1765532473363"
+}
+ 
+ 
+get  CASE BY ID 
+ <BASE_URL>/{app}/api/case/{caseId}
+https://stubbed-blaze-api.onrender.com/know-your-customer/api/case/C-415
+https://stubbed-blaze-api.onrender.com/know-your-customer/api/case/case-id
+response
+ 
+ 
+{
+    "caseId": "C-468",
+    "caseType": {
+        "id": "kyc-basic"
+    }
+}
+ 
+ 
+put CASE BY ID
+ <BASE_URL>/{app}/api/case
+
+https://stubbed-blaze-api.onrender.com/know-your-customer/api/case
+req{
+ "caseId": "C-878",
+   "status": "In Progress"
+}
+ 
+res
+{
+    "status": "success"
+}
+ 
+ 
+
+ 
+ 
+GET of case-type/{id}
+  <BASE_URL>/{app}/api/case-type/{caseId}
+
+stubbed-blaze-api.onrender.com/customer-service/api/case-type/customer-complaint
+ 
+get all task quue
+  <BASE_URL>/{app}/api/task-queue
+https://stubbed-blaze-api.onrender.com/know-your-customer/api/task-queue
+[
+    {
+        "id": "bookticket",
+        "label": "bookticket"
+    },
+    {
+        "id": "chkticket",
+        "label": "chkticket"
+    },
+    {
+        "id": "support_tickets",
+        "label": "Support Tickets"
+    }
+]
+
+
+UI/VIEW api
+<BASE_URL>/{app}/api/view
+
+
+https://stubbed-blaze-api.onrender.com/customer-service/api/view/applicant-info
+{
+    "id": "applicant-info",
+    "context": {
+        "type": "case",
+        "entity": "intake"
+    },
+    "fields": [
+        {
+            "attribute": "dateOfRequest"
+        },
+        {
+            "view": {
+                "id": "person-details-basic",
+                "context": ""
+            }
+        },
+        {
+            "view": {
+                "id": "person-details-basic",
+                "context": "partner"
+            }
+        }
+    ]
+}
+ 
+ 
+ <BASE_URL>/{app}/api/view/{id}
+
+https://stubbed-blaze-api.onrender.com/transaction-monitoring/api/view/person-details-basic
+{
+    "id": "personal-details-basic",
+    "context": {
+        "type": "data",
+        "entity": "person"
+    },
+    "fields": [
+        {
+            "attribute": "firstName"
+        },
+        {
+            "attribute": "lastName"
+        },
+        {
+            "attribute": "dateOfBirth"
+        }
+    ]
+}  
+ 
+ 
+GET TASK BY ID
+ <BASE_URL>/{app}/api/task/user/{id=any random number u can  give}
+
+stubbed-blaze-api.onrender.com/know-your-customer/api/task/user/1234
+ 
+[
+    {
+        "caseId": "C-948",
+        "caseType": {
+            "name": "know-your-customer-task-user"
+        },
+        "createdAt": "2025-12-12T09:51:41.791Z",
+        "updatedAt": "2025-12-12T09:51:41.791Z",
+        "updatedBy": "system-user"
+    },
+    {
+        "caseId": "C-347",
+        "caseType": {
+            "name": "know-your-customer-task-user"
+        },
+        "createdAt": "2025-12-12T09:51:41.791Z",
+        "updatedAt": "2025-12-12T09:51:41.791Z",
+        "updatedBy": "system-user"
+    },
+    {
+        "caseId": "C-242",
+        "caseType": {
+            "name": "know-your-customer-task-user"
+        },
+        "createdAt": "2025-12-12T09:51:41.791Z",
+        "updatedAt": "2025-12-12T09:51:41.791Z",
+        "updatedBy": "system-user"
+    },
+    {
+        "caseId": "C-606",
+        "caseType": {
+            "name": "know-your-customer-task-user"
+        },
+        "createdAt": "2025-12-12T09:51:41.791Z",
+        "updatedAt": "2025-12-12T09:51:41.791Z",
+        "updatedBy": "system-user"
+    }
+]
+ 
+
+ get task queue by id <BASE_URL>/{app}/api/task/queue/{id=any random number u can  give}
+
+https://stubbed-blaze-api.onrender.com/customer-service/api/task/queue/0999
+ 
+[
+    {
+        "caseId": "C-817",
+        "caseType": {
+            "name": "customer-service-task-queue"
+        },
+        "createdAt": "2025-12-12T09:54:03.445Z",
+        "updatedAt": "2025-12-12T09:54:03.445Z",
+        "updatedBy": "system-user"
+    },
+    {
+        "caseId": "C-141",
+        "caseType": {
+            "name": "customer-service-task-queue"
+        },
+        "createdAt": "2025-12-12T09:54:03.445Z",
+        "updatedAt": "2025-12-12T09:54:03.445Z",
+        "updatedBy": "system-user"
+    },
+    {
+        "caseId": "C-510",
+        "caseType": {
+            "name": "customer-service-task-queue"
+        },
+        "createdAt": "2025-12-12T09:54:03.445Z",
+        "updatedAt": "2025-12-12T09:54:03.445Z",
+        "updatedBy": "system-user"
+    },
+    {
+        "caseId": "C-507",
+        "caseType": {
+            "name": "customer-service-task-queue"
+        },
+        "createdAt": "2025-12-12T09:54:03.445Z",
+        "updatedAt": "2025-12-12T09:54:03.445Z",
+        "updatedBy": "system-user"
+    },
+    {
+        "caseId": "C-149",
+        "caseType": {
+            "name": "customer-service-task-queue"
+        },
+        "createdAt": "2025-12-12T09:54:03.445Z",
+        "updatedAt": "2025-12-12T09:54:03.445Z",
+        "updatedBy": "system-user"
+    }
+]
+ 
+ 
+<BASE_URL>/{app}/api/data-model
+Get all data-model https://stubbed-blaze-api.onrender.com/customer-service/api/data-model
+
+<BASE_URL>/{app}/api/data-model/{id}
+:get by id data-model https://stubbed-blaze-api.onrender.com/customer-service/api/data-model/person
+ 
+get all function
+<BASE_URL>/{app}/api/function
+https://stubbed-blaze-api.onrender.com/customer-service/api/function
+
+[
+    {
+        "id": "calculate-age",
+        "name": "Calculate Age",
+        "category": "calculation"
+    },
+    {
+        "id": "route-by-age",
+        "name": "Route By Age",
+        "category": "decision"
+    },
+    {
+        "id": "fetch-risk-score",
+        "name": "Fetch Risk Score",
+        "category": "integration"
+    },
+    {
+        "id": "normalize-client-name",
+        "name": "Normalize Client Name",
+        "category": "transformation"
+    }
+]
+ 
+get category function
+<BASE_URL>/{app}/api/function/category/id
+
+
+
+https://stubbed-blaze-api.onrender.com/customer-service/api/function/calculation/calculate-age
+
+module.exports = function (caseObj) {
+  const dobStr = caseObj?.client?.dateOfBirth;
+  if (!dobStr) return null;
+  const dob = new Date(dobStr);
+  if (isNaN(dob)) return null;
+  const now = new Date();
+  let age = now.getFullYear() - dob.getFullYear();
+  const hadBirthday = (now.getMonth() > dob.getMonth()) || (now.getMonth() === dob.getMonth() && now.getDate() >= dob.getDate());
+  if (!hadBirthday) age--;
+  return age;  //Return Age 
+};
+ 
+<BASE_URL>/{app}/api/function/{category}/{id}/execute
+stubbed-blaze-api.onrender.com/customer-service/api/function/calculation/averageResolutionTimeRepor…
+ 
+dashboard
+https://stubbed-blaze-api.onrender.com/customer-service/api/dashboard
+locale
+https://stubbed-blaze-api.onrender.com/customer-service/api/locale
+ 
+lang by locale 
+https://stubbed-blaze-api.onrender.com/customer-service/api/locale/de
+ 
+APP-MTRICS
+stubbed-blaze-api.onrender.com/customer-service/api/app-metrics
+ 
