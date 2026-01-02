@@ -559,6 +559,30 @@ app.get(
     });
   }
 );
+app.get(
+  "/:app/api/function/calculation/openCasesByStatus/execute",
+  (req, res) => {
+    const executedAt = new Date().toISOString();
+
+    return res.json({
+      success: true,
+      functionType: "data",
+      result: {
+        data: [
+          { status: "New", count: "10" },
+          { status: "Open", count: "42" },
+          { status: "In Progress", count: "31" },
+          { status: "Pending", count: "9" },
+          { status: "Resolved-Complete", count: "18" },
+          { status: "Resolved-Cancelled", count: "3" }
+        ],
+        metadata: {
+          fetchedAt: executedAt
+        }
+      }
+    });
+  }
+);
 
 app.get("/:app/api/app-metrics", (req, res) => {
   try {
