@@ -566,7 +566,6 @@ app.get(
 
     return res.json({
       success: true,
-      functionType: "data",
       result: {
         data: [
           { status: "New", count: "10" },
